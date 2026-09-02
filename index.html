@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🗳️ Weverton 2026</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================================ -->
+    <!-- HEADER FLUTUANTE SOBRE O MAPA                               -->
+    <!-- ============================================================ -->
+    <header class="floating-header">
+        <div class="header-left">
+            <div class="logo-foto">
+                <img src="https://legis.senado.leg.br/senadores/fotos-oficiais/5411" alt="Weverton" id="fotoSenador" />
+            </div>
+            <div class="info-senador">
+                <h1>Weverton Rocha</h1>
+                <span class="cargo"><i class="fas fa-map-marker-alt"></i> Senado - MA 2026</span>
+            </div>
+            <div class="tempo-restante">
+                <i class="fas fa-clock"></i> <span id="diasRestantes">34</span> dias
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="card-stat">
+                <span class="numero" id="totalEleitores">5.186.562</span>
+                <span class="label">Eleitores</span>
+            </div>
+            <div class="card-stat">
+                <span class="numero" id="metaGeral">1.200.000</span>
+                <span class="label">Meta</span>
+            </div>
+            <div class="card-stat">
+                <span class="numero" id="votosProjetados">0</span>
+                <span class="label">Projetados</span>
+            </div>
+            <div class="card-stat">
+                <span class="numero" id="diferencaMeta">0</span>
+                <span class="label">Diferença</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- MAPA - TELA CHEIA                                           -->
+    <!-- ============================================================ -->
+    <div id="mapaFull"></div>
+
+    <!-- ============================================================ -->
+    <!-- PAINEL DE PESQUISAS - LADO DIREITO (FLUTUANTE)            -->
+    <!-- ============================================================ -->
+    <div class="pesquisas-panel" id="pesquisasPanel">
+        <div class="pesquisas-panel-header">
+            <span><i class="fas fa-poll"></i> Pesquisas</span>
+            <button class="btn-toggle-pesquisas" id="btnTogglePesquisas">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+        <div class="pesquisas-panel-body" id="pesquisasPanelBody">
+            <!-- Quaest -->
+            <div class="pesquisa-mini-card">
+                <div class="pesquisa-mini-header">
+                    <span class="instituto">Quaest</span>
+                    <span class="data">Ago/26</span>
+                    <span class="registro">MA-02558</span>
+                </div>
+                <div class="pesquisa-mini-body">
+                    <div class="cand-mini destaque">
+                        <span>Weverton</span>
+                        <span class="valor">11%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Roseana</span>
+                        <span class="valor">16%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Lahesio</span>
+                        <span class="valor">10%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Fufuca</span>
+                        <span class="valor">9%</span>
+                    </div>
+                </div>
+                <div class="pesquisa-mini-footer">
+                    <span><i class="fas fa-users"></i> 900</span>
+                    <span><i class="fas fa-percent"></i> ±3%</span>
+                    <span class="indecisos">27% indecisos</span>
+                </div>
+            </div>
+
+            <!-- IPSensus -->
+            <div class="pesquisa-mini-card">
+                <div class="pesquisa-mini-header">
+                    <span class="instituto">IP Sensus</span>
+                    <span class="data">Ago/26</span>
+                    <span class="registro">MA-09971</span>
+                </div>
+                <div class="pesquisa-mini-body">
+                    <div class="cand-mini destaque">
+                        <span>Weverton</span>
+                        <span class="valor">16,24%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Roseana</span>
+                        <span class="valor">24,82%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Fufuca</span>
+                        <span class="valor">19,17%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Lahesio</span>
+                        <span class="valor">19,10%</span>
+                    </div>
+                </div>
+                <div class="pesquisa-mini-footer">
+                    <span><i class="fas fa-users"></i> 1.480</span>
+                    <span><i class="fas fa-percent"></i> ±2,55%</span>
+                    <span class="indecisos">24,5% indecisos</span>
+                </div>
+            </div>
+
+            <!-- Datafolha -->
+            <div class="pesquisa-mini-card">
+                <div class="pesquisa-mini-header">
+                    <span class="instituto">Datafolha</span>
+                    <span class="data">Ago/26</span>
+                    <span class="registro">MA-08123</span>
+                </div>
+                <div class="pesquisa-mini-body">
+                    <div class="cand-mini destaque">
+                        <span>Weverton</span>
+                        <span class="valor">12%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Roseana</span>
+                        <span class="valor">20%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Fufuca</span>
+                        <span class="valor">11%</span>
+                    </div>
+                    <div class="cand-mini">
+                        <span>Lahesio</span>
+                        <span class="valor">10%</span>
+                    </div>
+                </div>
+                <div class="pesquisa-mini-footer">
+                    <span><i class="fas fa-users"></i> 1.200</span>
+                    <span><i class="fas fa-percent"></i> ±3%</span>
+                    <span class="indecisos">28% indecisos</span>
+                </div>
+            </div>
+
+            <!-- Mini Gráfico de Evolução -->
+            <div class="grafico-mini-container">
+                <div class="grafico-mini-header">
+                    <span><i class="fas fa-chart-line"></i> Evolução</span>
+                </div>
+                <canvas id="graficoMiniPesquisas" height="60"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- PAINEL DE CONTROLE FLUTUANTE (ESQUERDA)                    -->
+    <!-- ============================================================ -->
+    <button class="btn-toggle-panel" id="btnTogglePanel">
+        <i class="fas fa-chart-bar"></i>
+    </button>
+
+    <div class="floating-panel" id="floatingPanel">
+        <div class="panel-section">
+            <h3><i class="fas fa-thermometer-half"></i> Progresso</h3>
+            <div class="termometro-container">
+                <div class="termometro-barra">
+                    <div class="termometro-fill" id="termometroFill" style="width:0%;"></div>
+                </div>
+                <div class="termometro-info">
+                    <span id="termometroVotos">0</span>
+                    <span>/ 1.200.000</span>
+                </div>
+                <div class="termometro-porcentagem" id="termometroPorcentagem">0%</div>
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <h3><i class="fas fa-filter"></i> Filtros</h3>
+            <div class="filtros-mini">
+                <select id="filtroRegiao">
+                    <option value="todas">Todas as Regiões</option>
+                    <option value="Grande São Luís">Grande São Luís</option>
+                    <option value="Região Tocantina">Tocantina</option>
+                    <option value="Cocais">Cocais</option>
+                    <option value="Delta do Parnaíba">Delta do Parnaíba</option>
+                    <option value="Mearim">Mearim</option>
+                    <option value="Baixada">Baixada</option>
+                    <option value="Sul do MA">Sul do MA</option>
+                </select>
+                <select id="filtroStatus">
+                    <option value="todos">Todos</option>
+                    <option value="verde">🟢 Weverton 1º Voto</option>
+                    <option value="amarelo">🟡 Weverton 1º ou 2º Voto</option>
+                    <option value="vermelho">🔴 Indefinido</option>
+                </select>
+                <input type="text" id="buscaCidade" placeholder="Buscar cidade..." />
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <h3><i class="fas fa-palette"></i> Legenda</h3>
+            <div class="legenda-mini">
+                <span><span class="dot green"></span> <strong>Verde:</strong> Weverton é o 1º voto</span>
+                <span><span class="dot yellow"></span> <strong>Amarelo:</strong> Weverton é o 1º ou 2º voto</span>
+                <span><span class="dot red"></span> <strong>Vermelho:</strong> Indefinido</span>
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <h3><i class="fas fa-trophy"></i> Top 10</h3>
+            <div id="listaRankingMini"></div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- MINI-MAPAS                                                   -->
+    <!-- ============================================================ -->
+    <div class="mini-maps-bar" id="miniMapsBar">
+        <div class="mini-map-item" data-regiao="Grande São Luís">
+            <span class="mini-label">Grande São Luís <span class="badge" id="badgeGSL">0</span></span>
+            <div class="mini-map" id="miniMapGSL"></div>
+        </div>
+        <div class="mini-map-item" data-regiao="Região Tocantina">
+            <span class="mini-label">Tocantina <span class="badge" id="badgeTocantina">0</span></span>
+            <div class="mini-map" id="miniMapTocantina"></div>
+        </div>
+        <div class="mini-map-item" data-regiao="Cocais">
+            <span class="mini-label">Cocais <span class="badge" id="badgeCocais">0</span></span>
+            <div class="mini-map" id="miniMapCocais"></div>
+        </div>
+        <div class="mini-map-item" data-regiao="Delta do Parnaíba">
+            <span class="mini-label">Delta do Parnaíba <span class="badge" id="badgeDelta">0</span></span>
+            <div class="mini-map" id="miniMapDelta"></div>
+        </div>
+        <div class="mini-map-item" data-regiao="Mearim">
+            <span class="mini-label">Mearim <span class="badge" id="badgeMearim">0</span></span>
+            <div class="mini-map" id="miniMapMearim"></div>
+        </div>
+        <div class="mini-map-item" data-regiao="Baixada">
+            <span class="mini-label">Baixada <span class="badge" id="badgeBaixada">0</span></span>
+            <div class="mini-map" id="miniMapBaixada"></div>
+        </div>
+        <div class="mini-map-item" data-regiao="Sul do MA">
+            <span class="mini-label">Sul do MA <span class="badge" id="badgeSul">0</span></span>
+            <div class="mini-map" id="miniMapSul"></div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- RODAPÉ                                                      -->
+    <!-- ============================================================ -->
+    <footer>
+        <div class="footer-left">
+            <span><i class="fas fa-flag"></i> <strong id="totalCidadesFooter">217</strong> municípios</span>
+            <span><i class="fas fa-user-check"></i> <strong id="footerConsolidados">0</strong> sozinhos</span>
+            <span><i class="fas fa-user-clock"></i> <strong id="footerDisputados">0</strong> com outros</span>
+            <span><i class="fas fa-user-slash"></i> <strong id="footerNeutros">0</strong> sem apoio</span>
+        </div>
+        <div class="footer-right">
+            <span>© 2026 Weverton Rocha</span>
+            <span><i class="fas fa-database"></i> TSE 2024</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

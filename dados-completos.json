@@ -1,0 +1,6273 @@
+{
+  "informacoes_gerais": {
+    "total_eleitores": 5180738,
+    "total_municipios": 217,
+    "meta_geral": 1200000,
+    "votos_weverton_2018": 1700000,
+    "transferencia_padrao": 30,
+    "ultima_atualizacao": "02/09/2026",
+    "fonte_dados": "TSE 2024, TRE-MA, Planilha do Usuário"
+  },
+  "cidades": [
+    {
+      "id": 1,
+      "nome": "Açailândia",
+      "lat": -4.9472,
+      "lng": -47.5004,
+      "regiao": "Região Tocantina",
+      "eleitores": 43210,
+      "prefeito": "Dr. Benjamim",
+      "partido_prefeito": "União",
+      "votos_prefeito": 18500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 5550,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Afonso Cunha",
+      "lat": -4.1173,
+      "lng": -43.3275,
+      "regiao": "Cocais",
+      "eleitores": 5890,
+      "prefeito": "Pedro Medeiros",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 0,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA (FALAR COM DEP.ALUISIO SANTOS-PL)",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Água Doce do Maranhão",
+      "lat": -2.8372,
+      "lng": -42.8175,
+      "regiao": "Delta do Parnaíba",
+      "eleitores": 11750,
+      "prefeito": "Eliane Dias",
+      "partido_prefeito": "PDT",
+      "votos_prefeito": 5800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 1740,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 99154-3120",
+          "cargo": "Prefeita",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Alcântara",
+      "lat": -2.4044,
+      "lng": -44.4142,
+      "regiao": "Baixada",
+      "eleitores": 21450,
+      "prefeito": "Nivaldo Araújo",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 0,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "(ALDERICO)",
+      "aliados": []
+    },
+    {
+      "id": 5,
+      "nome": "Aldeias Altas",
+      "lat": -4.601,
+      "lng": -43.4703,
+      "regiao": "Cocais",
+      "eleitores": 15680,
+      "prefeito": "Kedson",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 7200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 2160,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON, FUFUCA E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(99) 99970-8407",
+          "cargo": "Prefeito",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Altamira do Maranhão",
+      "lat": -4.0988,
+      "lng": -45.4678,
+      "regiao": "Centro Maranhense",
+      "eleitores": 8930,
+      "prefeito": "Marton Pageú",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 4100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 1230,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 99122-0022",
+          "cargo": "Prefeito",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Alto Alegre do Maranhão",
+      "lat": -4.2126,
+      "lng": -44.4477,
+      "regiao": "Centro Maranhense",
+      "eleitores": 12450,
+      "prefeito": "Nilsilene do Liorne",
+      "partido_prefeito": "União",
+      "votos_prefeito": 5600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 1680,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 98413-4045",
+          "cargo": "Prefeita",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Alto Alegre do Pindaré",
+      "lat": -3.8357,
+      "lng": -45.8009,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 18340,
+      "prefeito": "Didi do PP",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 8500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA (tem Oposição)",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Alto Parnaíba",
+      "lat": -9.1027,
+      "lng": -45.9305,
+      "regiao": "Sul do MA",
+      "eleitores": 12480,
+      "prefeito": "Rubens Japonês",
+      "partido_prefeito": "PSDB",
+      "votos_prefeito": 5700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Amapá do Maranhão",
+      "lat": -1.6772,
+      "lng": -46.0196,
+      "regiao": "Norte Maranhense",
+      "eleitores": 6230,
+      "prefeito": "Nelene Gomes",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 2800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 840,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 97017-3798",
+          "cargo": "Prefeita",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Amarante do Maranhão",
+      "lat": -5.5686,
+      "lng": -46.7416,
+      "regiao": "Região Tocantina",
+      "eleitores": 18920,
+      "prefeito": "Vanderly",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 8900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA (VINICIUS FERRO ESTÁ EM CONVERSA)",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Anajatuba",
+      "lat": -3.2647,
+      "lng": -44.6132,
+      "regiao": "Baixada",
+      "eleitores": 14560,
+      "prefeito": "Helder Aragão",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 6700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 2010,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 98432-0035",
+          "cargo": "Prefeito",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "nome": "Anapurus",
+      "lat": -3.6787,
+      "lng": -43.1111,
+      "regiao": "Leste Maranhense",
+      "eleitores": 9820,
+      "prefeito": "Dr. Tanios",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 4500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "nome": "Apicum-Açu",
+      "lat": -1.4554,
+      "lng": -45.0874,
+      "regiao": "Norte Maranhense",
+      "eleitores": 7430,
+      "prefeito": "Jadeco",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 3400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "nome": "Araguanã",
+      "lat": -2.9472,
+      "lng": -45.6653,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 11230,
+      "prefeito": "Flávio Amorim",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 5100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "nome": "Araioses",
+      "lat": -2.8904,
+      "lng": -41.9013,
+      "regiao": "Delta do Parnaíba",
+      "eleitores": 25670,
+      "prefeito": "Neto Carvalho",
+      "partido_prefeito": "PDT",
+      "votos_prefeito": 11800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "nome": "Arame",
+      "lat": -4.8837,
+      "lng": -46.0034,
+      "regiao": "Centro Maranhense",
+      "eleitores": 18340,
+      "prefeito": "Pedro Fernandes",
+      "partido_prefeito": "União",
+      "votos_prefeito": 8400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA - NÃO",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "nome": "Arari",
+      "lat": -3.4528,
+      "lng": -44.7722,
+      "regiao": "Baixada",
+      "eleitores": 16570,
+      "prefeito": "Simplesmente Maria",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 7600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 2280,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 98819-4920",
+          "cargo": "Prefeita",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "nome": "Axixá",
+      "lat": -2.8378,
+      "lng": -44.0614,
+      "regiao": "Baixada",
+      "eleitores": 8930,
+      "prefeito": "Roberta Barreto",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 4100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 1230,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON, HILTON E ROSEANA (?)",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 98828-3646",
+          "cargo": "Prefeita",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "nome": "Bacabal",
+      "lat": -4.2264,
+      "lng": -44.7819,
+      "regiao": "Centro Maranhense",
+      "eleitores": 78900,
+      "prefeito": "Roberto Costa",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 35200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 10560,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 98819-1698",
+          "cargo": "Prefeito",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "nome": "Bacabeira",
+      "lat": -2.9714,
+      "lng": -44.3114,
+      "regiao": "Baixada",
+      "eleitores": 12340,
+      "prefeito": "Naila Gonçalo",
+      "partido_prefeito": "Mobiliza",
+      "votos_prefeito": 5600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "HILTON (LEMBRAR SEGUNDA LIGAR HILTON - ?)",
+      "aliados": [
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "nome": "Bacuri",
+      "lat": -1.7036,
+      "lng": -45.1192,
+      "regiao": "Norte Maranhense",
+      "eleitores": 13450,
+      "prefeito": "Marcio Hominho",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 6100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "nome": "Bacurituba",
+      "lat": -2.7187,
+      "lng": -44.7276,
+      "regiao": "Baixada",
+      "eleitores": 5430,
+      "prefeito": "Leticia de Sibá",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 2400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "nome": "Balsas",
+      "lat": -7.5328,
+      "lng": -46.0356,
+      "regiao": "Sul do MA",
+      "eleitores": 64560,
+      "prefeito": "Alan da Marissol",
+      "partido_prefeito": "PRD",
+      "votos_prefeito": 29800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA - NÃO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "nome": "Barão de Grajaú",
+      "lat": -6.1867,
+      "lng": -43.0233,
+      "regiao": "Sul do MA",
+      "eleitores": 21340,
+      "prefeito": "Antônio Carlos Resende",
+      "partido_prefeito": "União",
+      "votos_prefeito": 9800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 2940,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON, HILTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 99110-0202",
+          "cargo": "Prefeito",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "nome": "Barra do Corda",
+      "lat": -5.4978,
+      "lng": -45.2431,
+      "regiao": "Centro Maranhense",
+      "eleitores": 54320,
+      "prefeito": "Rigo Teles",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 25100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA (VINICIUS FERRO ESTÁ EM CONVERSA)",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "nome": "Barreirinhas",
+      "lat": -2.7492,
+      "lng": -42.8258,
+      "regiao": "Leste Maranhense",
+      "eleitores": 34560,
+      "prefeito": "Vinicius Vale",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 15900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 4770,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 98922-9947",
+          "cargo": "Prefeito",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "nome": "Bela Vista do Maranhão",
+      "lat": -3.7303,
+      "lng": -45.3064,
+      "regiao": "Baixada",
+      "eleitores": 9870,
+      "prefeito": "Adilson do Guri",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 4500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "nome": "Belágua",
+      "lat": -3.1551,
+      "lng": -43.5158,
+      "regiao": "Leste Maranhense",
+      "eleitores": 6320,
+      "prefeito": "Neném Pontes",
+      "partido_prefeito": "Republicanos",
+      "votos_prefeito": 2800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "nome": "Benedito Leite",
+      "lat": -7.2178,
+      "lng": -44.5522,
+      "regiao": "Sul do MA",
+      "eleitores": 8430,
+      "prefeito": "Rodrigo Coelho",
+      "partido_prefeito": "Republicanos",
+      "votos_prefeito": 3800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "",
+      "aliados": []
+    },
+    {
+      "id": 31,
+      "nome": "Bequimão",
+      "lat": -2.4489,
+      "lng": -44.7833,
+      "regiao": "Baixada",
+      "eleitores": 12450,
+      "prefeito": "José Martins",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 5700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "nome": "Bernardo do Mearim",
+      "lat": -4.6196,
+      "lng": -44.7475,
+      "regiao": "Mearim",
+      "eleitores": 6750,
+      "prefeito": "Junior Xavier",
+      "partido_prefeito": "PDT",
+      "votos_prefeito": 3100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "nome": "Boa Vista do Gurupi",
+      "lat": -1.7872,
+      "lng": -46.3025,
+      "regiao": "Norte Maranhense",
+      "eleitores": 7890,
+      "prefeito": "Dilcilene Oliveira",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 3600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "nome": "Bom Jardim",
+      "lat": -3.5794,
+      "lng": -45.9072,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 15670,
+      "prefeito": "Cristiane Varão",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 7200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "nome": "Bom Jesus das Selvas",
+      "lat": -4.4225,
+      "lng": -46.7645,
+      "regiao": "Região Tocantina",
+      "eleitores": 18920,
+      "prefeito": "Franklim Duarte",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 8700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 2610,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON, FUFUCA E ROSEANA (?)",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 98498-6926",
+          "cargo": "Prefeito",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "nome": "Bom Lugar",
+      "lat": -4.2858,
+      "lng": -45.0356,
+      "regiao": "Centro Maranhense",
+      "eleitores": 7450,
+      "prefeito": "Marlene Miranda",
+      "partido_prefeito": "União",
+      "votos_prefeito": 3400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "nome": "Brejo",
+      "lat": -3.6853,
+      "lng": -42.7586,
+      "regiao": "Leste Maranhense",
+      "eleitores": 23450,
+      "prefeito": "Thâmara Castro",
+      "partido_prefeito": "PT",
+      "votos_prefeito": 10800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "OPOSIÇÃO",
+      "aliados": []
+    },
+    {
+      "id": 38,
+      "nome": "Brejo de Areia",
+      "lat": -4.3344,
+      "lng": -45.5319,
+      "regiao": "Centro Maranhense",
+      "eleitores": 5430,
+      "prefeito": "Geyse Costa",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 2400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "nome": "Buriti",
+      "lat": -3.9453,
+      "lng": -42.8994,
+      "regiao": "Leste Maranhense",
+      "eleitores": 18760,
+      "prefeito": "André Augusto",
+      "partido_prefeito": "Republicanos",
+      "votos_prefeito": 8600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "nome": "Buriti Bravo",
+      "lat": -5.8372,
+      "lng": -43.8353,
+      "regiao": "Cocais",
+      "eleitores": 21340,
+      "prefeito": "Luciana Leocadio",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 9800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA - NÃO",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "nome": "Buriticupu",
+      "lat": -4.3281,
+      "lng": -46.4019,
+      "regiao": "Região Tocantina",
+      "eleitores": 34560,
+      "prefeito": "João Carlos",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 15900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "nome": "Buritirana",
+      "lat": -5.6006,
+      "lng": -47.0178,
+      "regiao": "Região Tocantina",
+      "eleitores": 12450,
+      "prefeito": "Tony Brandão",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 5700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "nome": "Cachoeira Grande",
+      "lat": -2.9328,
+      "lng": -44.0589,
+      "regiao": "Baixada",
+      "eleitores": 8750,
+      "prefeito": "Cesar Castro",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 4000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "nome": "Cajapió",
+      "lat": -2.8839,
+      "lng": -44.6267,
+      "regiao": "Baixada",
+      "eleitores": 8930,
+      "prefeito": "Dr. Rômulo",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 4100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "nome": "Cajari",
+      "lat": -3.3211,
+      "lng": -45.0039,
+      "regiao": "Baixada",
+      "eleitores": 13450,
+      "prefeito": "Constâncio Souza",
+      "partido_prefeito": "União",
+      "votos_prefeito": 6100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "HILTON - NÃO",
+      "aliados": [
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "nome": "Campestre do Maranhão",
+      "lat": -6.1783,
+      "lng": -47.3614,
+      "regiao": "Região Tocantina",
+      "eleitores": 11750,
+      "prefeito": "Fernando Bermuda",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 5400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "nome": "Cândido Mendes",
+      "lat": -1.4469,
+      "lng": -45.7242,
+      "regiao": "Norte Maranhense",
+      "eleitores": 14560,
+      "prefeito": "Facinho Rocha",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 6700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "nome": "Cantanhede",
+      "lat": -3.63,
+      "lng": -44.3769,
+      "regiao": "Baixada",
+      "eleitores": 19870,
+      "prefeito": "Zé Martinho",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 9100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA (LIGAR SEGUNDA PARA PREFEITO -?)",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "nome": "Capinzal do Norte",
+      "lat": -4.7289,
+      "lng": -44.3269,
+      "regiao": "Centro Maranhense",
+      "eleitores": 10230,
+      "prefeito": "Abnadar Portela",
+      "partido_prefeito": "Republicanos",
+      "votos_prefeito": 4700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "nome": "Carolina",
+      "lat": -7.3328,
+      "lng": -47.4694,
+      "regiao": "Região Tocantina",
+      "eleitores": 21340,
+      "prefeito": "Jayme Fonseca",
+      "partido_prefeito": "PSDB",
+      "votos_prefeito": 9800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "nome": "Carutapera",
+      "lat": -1.1989,
+      "lng": -46.0217,
+      "regiao": "Norte Maranhense",
+      "eleitores": 15670,
+      "prefeito": "Amin Quemel",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 7200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON ? E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "nome": "Caxias",
+      "lat": -4.8578,
+      "lng": -43.3492,
+      "regiao": "Cocais",
+      "eleitores": 98760,
+      "prefeito": "Gentil Neto",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 45600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA - NÃO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "nome": "Cedral",
+      "lat": -2.0003,
+      "lng": -44.5356,
+      "regiao": "Baixada",
+      "eleitores": 8930,
+      "prefeito": "Danilo Moraes",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 4100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "nome": "Central do Maranhão",
+      "lat": -2.2711,
+      "lng": -44.8339,
+      "regiao": "Baixada",
+      "eleitores": 7890,
+      "prefeito": "Fechinha",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 3600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "nome": "Centro do Guilherme",
+      "lat": -2.3667,
+      "lng": -46.0,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 11230,
+      "prefeito": "Auricélio",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 5100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "nome": "Centro Novo do Maranhão",
+      "lat": -2.1219,
+      "lng": -46.1364,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 16340,
+      "prefeito": "Junior Garimpeiro",
+      "partido_prefeito": "PSDB",
+      "votos_prefeito": 7500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "LAHESIO",
+      "aliados": [
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "nome": "Chapadinha",
+      "lat": -3.7378,
+      "lng": -43.3533,
+      "regiao": "Leste Maranhense",
+      "eleitores": 45670,
+      "prefeito": "Belezinha",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 36076,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 10822,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 99131-2401",
+          "cargo": "Prefeita",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "nome": "Cidelândia",
+      "lat": -5.1761,
+      "lng": -47.7853,
+      "regiao": "Região Tocantina",
+      "eleitores": 12340,
+      "prefeito": "Eustaquio Sampaio",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 5600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "nome": "Codó",
+      "lat": -4.4472,
+      "lng": -43.8847,
+      "regiao": "Cocais",
+      "eleitores": 76540,
+      "prefeito": "Chiquinho FC",
+      "partido_prefeito": "PT",
+      "votos_prefeito": 35200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "nome": "Coelho Neto",
+      "lat": -4.2553,
+      "lng": -43.0158,
+      "regiao": "Cocais",
+      "eleitores": 28900,
+      "prefeito": "Bruno Silva",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 13300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA -NÃO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "nome": "Colinas",
+      "lat": -6.0236,
+      "lng": -44.2536,
+      "regiao": "Sul do MA",
+      "eleitores": 29870,
+      "prefeito": "Renato Santos",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 13700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "nome": "Conceição do Lago-Açu",
+      "lat": -3.8328,
+      "lng": -44.8933,
+      "regiao": "Baixada",
+      "eleitores": 13450,
+      "prefeito": "Professora Cici",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 6100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "nome": "Coroatá",
+      "lat": -4.1317,
+      "lng": -44.1278,
+      "regiao": "Cocais",
+      "eleitores": 43560,
+      "prefeito": "Edimar Vaqueiro",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 20000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "nome": "Cururupu",
+      "lat": -1.8286,
+      "lng": -44.8689,
+      "regiao": "Baixada",
+      "eleitores": 32100,
+      "prefeito": "Aldo Lopes",
+      "partido_prefeito": "Republicanos",
+      "votos_prefeito": 14800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "OPOSIÇÃO",
+      "aliados": []
+    },
+    {
+      "id": 65,
+      "nome": "Davinópolis",
+      "lat": -5.5572,
+      "lng": -47.4217,
+      "regiao": "Região Tocantina",
+      "eleitores": 11230,
+      "prefeito": "Zé Pequeno",
+      "partido_prefeito": "PDT",
+      "votos_prefeito": 5100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(99) 98469-5442",
+          "cargo": "Prefeito",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "nome": "Dom Pedro",
+      "lat": -5.0219,
+      "lng": -44.4353,
+      "regiao": "Centro Maranhense",
+      "eleitores": 21340,
+      "prefeito": "Galego Mota",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 9800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA - NÃO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "nome": "Duque Bacelar",
+      "lat": -4.1553,
+      "lng": -42.9469,
+      "regiao": "Cocais",
+      "eleitores": 13200,
+      "prefeito": "Flávio Furtado",
+      "partido_prefeito": "PDT",
+      "votos_prefeito": 6000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "nome": "Esperantinópolis",
+      "lat": -4.8772,
+      "lng": -44.6931,
+      "regiao": "Mearim",
+      "eleitores": 16570,
+      "prefeito": "Simone Carneiro",
+      "partido_prefeito": "União",
+      "votos_prefeito": 7600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "OPOSIÇÃO",
+      "aliados": []
+    },
+    {
+      "id": 69,
+      "nome": "Estreito",
+      "lat": -5.7833,
+      "lng": -43.2533,
+      "regiao": "Região Tocantina",
+      "eleitores": 25670,
+      "prefeito": "Leo Cunha",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 11800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON (CONFIRMAR COM JOSIMAR - ?)",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 98829-5195",
+          "cargo": "Prefeito",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "nome": "Feira Nova do Maranhão",
+      "lat": -6.9628,
+      "lng": -46.6903,
+      "regiao": "Sul do MA",
+      "eleitores": 8120,
+      "prefeito": "Luiza Coutinho",
+      "partido_prefeito": "União",
+      "votos_prefeito": 3700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "nome": "Fernando Falcão",
+      "lat": -6.1625,
+      "lng": -44.8925,
+      "regiao": "Sul do MA",
+      "eleitores": 6320,
+      "prefeito": "Raimunda Almeida",
+      "partido_prefeito": "PDT",
+      "votos_prefeito": 2900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "nome": "Formosa da Serra Negra",
+      "lat": -6.4019,
+      "lng": -46.0144,
+      "regiao": "Sul do MA",
+      "eleitores": 13450,
+      "prefeito": "Juceni",
+      "partido_prefeito": "PSDB",
+      "votos_prefeito": 6100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ELIZIANE",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Eliziane",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "nome": "Fortaleza dos Nogueiras",
+      "lat": -6.9628,
+      "lng": -46.6903,
+      "regiao": "Sul do MA",
+      "eleitores": 10230,
+      "prefeito": "Dra. Fernanda",
+      "partido_prefeito": "Republicanos",
+      "votos_prefeito": 4700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "LAHESIO",
+      "aliados": [
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "nome": "Fortuna",
+      "lat": -5.7311,
+      "lng": -44.1575,
+      "regiao": "Cocais",
+      "eleitores": 15340,
+      "prefeito": "Sebastião Costa",
+      "partido_prefeito": "PDT",
+      "votos_prefeito": 7000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "nome": "Godofredo Viana",
+      "lat": -1.4086,
+      "lng": -45.7739,
+      "regiao": "Norte Maranhense",
+      "eleitores": 11230,
+      "prefeito": "Marcio Viana",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 5100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "nome": "Gonçalves Dias",
+      "lat": -5.1506,
+      "lng": -44.2978,
+      "regiao": "Centro Maranhense",
+      "eleitores": 12450,
+      "prefeito": "Suane Dias",
+      "partido_prefeito": "MDB",
+      "votos_prefeito": 5700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "nome": "Governador Archer",
+      "lat": -5.0278,
+      "lng": -44.275,
+      "regiao": "Centro Maranhense",
+      "eleitores": 7430,
+      "prefeito": "Professora Leide",
+      "partido_prefeito": "",
+      "votos_prefeito": 3400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "nome": "Governador Edison Lobão",
+      "lat": -5.7483,
+      "lng": -47.3586,
+      "regiao": "Região Tocantina",
+      "eleitores": 15670,
+      "prefeito": "Flávio Soares",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 7200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "nome": "Governador Eugênio Barros",
+      "lat": -5.3167,
+      "lng": -44.2667,
+      "regiao": "Cocais",
+      "eleitores": 10230,
+      "prefeito": "Chiquinho do Banco",
+      "partido_prefeito": "",
+      "votos_prefeito": 4700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA E HILTON - NÃO",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "nome": "Governador Luiz Rocha",
+      "lat": -5.4667,
+      "lng": -44.0833,
+      "regiao": "Centro Maranhense",
+      "eleitores": 5890,
+      "prefeito": "Zezão",
+      "partido_prefeito": "",
+      "votos_prefeito": 2700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "HILTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "nome": "Governador Newton Bello",
+      "lat": -3.4283,
+      "lng": -45.6406,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 8930,
+      "prefeito": "Daniel Sena",
+      "partido_prefeito": "",
+      "votos_prefeito": 4100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ELIZIANE",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Eliziane",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "nome": "Governador Nunes Freire",
+      "lat": -2.13,
+      "lng": -45.88,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 17560,
+      "prefeito": "Fernando PL",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "nome": "Graça Aranha",
+      "lat": -5.4,
+      "lng": -44.3,
+      "regiao": "Centro Maranhense",
+      "eleitores": 5120,
+      "prefeito": "Bira",
+      "partido_prefeito": "",
+      "votos_prefeito": 2300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "nome": "Grajaú",
+      "lat": -5.8194,
+      "lng": -46.1389,
+      "regiao": "Sul do MA",
+      "eleitores": 45670,
+      "prefeito": "Dr. Gilson Guerreiro",
+      "partido_prefeito": "",
+      "votos_prefeito": 21000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "nome": "Guimarães",
+      "lat": -2.1311,
+      "lng": -44.6014,
+      "regiao": "Baixada",
+      "eleitores": 10980,
+      "prefeito": "Magno",
+      "partido_prefeito": "",
+      "votos_prefeito": 5000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "",
+      "aliados": []
+    },
+    {
+      "id": 86,
+      "nome": "Humberto de Campos",
+      "lat": -2.5989,
+      "lng": -43.4625,
+      "regiao": "Leste Maranhense",
+      "eleitores": 23450,
+      "prefeito": "Luis Fernando",
+      "partido_prefeito": "",
+      "votos_prefeito": 10800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "nome": "Icatu",
+      "lat": -2.7833,
+      "lng": -44.05,
+      "regiao": "Baixada",
+      "eleitores": 18920,
+      "prefeito": "Walace",
+      "partido_prefeito": "",
+      "votos_prefeito": 8700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON, ROSEANA, HILTON E ELIZIANE",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Eliziane",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "nome": "Igarapé do Meio",
+      "lat": -3.65,
+      "lng": -45.2333,
+      "regiao": "Baixada",
+      "eleitores": 11230,
+      "prefeito": "Aldenira",
+      "partido_prefeito": "",
+      "votos_prefeito": 5100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "nome": "Igarapé Grande",
+      "lat": -4.675,
+      "lng": -44.75,
+      "regiao": "Mearim",
+      "eleitores": 10980,
+      "prefeito": "João Vitor Xavier",
+      "partido_prefeito": "",
+      "votos_prefeito": 5000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "nome": "Imperatriz",
+      "lat": -5.5265,
+      "lng": -47.4917,
+      "regiao": "Região Tocantina",
+      "eleitores": 201099,
+      "prefeito": "Rildo Amaral",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 89000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA - NÃO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "nome": "Itaipava do Grajaú",
+      "lat": -5.15,
+      "lng": -46.0,
+      "regiao": "Sul do MA",
+      "eleitores": 14560,
+      "prefeito": "Junior do Posto",
+      "partido_prefeito": "",
+      "votos_prefeito": 6700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "nome": "Itapecuru Mirim",
+      "lat": -3.3925,
+      "lng": -44.3589,
+      "regiao": "Baixada",
+      "eleitores": 45320,
+      "prefeito": "Filipe Marreca",
+      "partido_prefeito": "",
+      "votos_prefeito": 20800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "nome": "Itinga do Maranhão",
+      "lat": -4.45,
+      "lng": -47.5333,
+      "regiao": "Região Tocantina",
+      "eleitores": 18920,
+      "prefeito": "Paula do Quininha",
+      "partido_prefeito": "",
+      "votos_prefeito": 8700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "nome": "Jatobá",
+      "lat": -5.8167,
+      "lng": -44.2167,
+      "regiao": "Sul do MA",
+      "eleitores": 5430,
+      "prefeito": "Leo do Banco",
+      "partido_prefeito": "",
+      "votos_prefeito": 2400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "nome": "Jenipapo dos Vieiras",
+      "lat": -5.3667,
+      "lng": -45.6833,
+      "regiao": "Sul do MA",
+      "eleitores": 15340,
+      "prefeito": "Arnobio Martins",
+      "partido_prefeito": "PDT",
+      "votos_prefeito": 7730,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "nome": "João Lisboa",
+      "lat": -5.4436,
+      "lng": -47.3942,
+      "regiao": "Região Tocantina",
+      "eleitores": 17890,
+      "prefeito": "Dr. Fábio Holanda",
+      "partido_prefeito": "",
+      "votos_prefeito": 8200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "nome": "Joselândia",
+      "lat": -4.9739,
+      "lng": -44.6953,
+      "regiao": "Centro Maranhense",
+      "eleitores": 15340,
+      "prefeito": "Raimundo Zuca",
+      "partido_prefeito": "",
+      "votos_prefeito": 7000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ROSEANA E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "nome": "Junco do Maranhão",
+      "lat": -1.8333,
+      "lng": -46.1167,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 4320,
+      "prefeito": "Zé Ricardo",
+      "partido_prefeito": "",
+      "votos_prefeito": 1900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "nome": "Lago da Pedra",
+      "lat": -4.57,
+      "lng": -45.13,
+      "regiao": "Centro Maranhense",
+      "eleitores": 39870,
+      "prefeito": "Maura Jorge",
+      "partido_prefeito": "",
+      "votos_prefeito": 18300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ROSEANA E LAHESIO",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "nome": "Lago do Junco",
+      "lat": -4.6089,
+      "lng": -45.0489,
+      "regiao": "Centro Maranhense",
+      "eleitores": 11750,
+      "prefeito": "Ataíde do Posto",
+      "partido_prefeito": "",
+      "votos_prefeito": 5400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "NÃO",
+      "aliados": []
+    },
+    {
+      "id": 101,
+      "nome": "Lago dos Rodrigues",
+      "lat": -4.5833,
+      "lng": -44.9667,
+      "regiao": "Centro Maranhense",
+      "eleitores": 7890,
+      "prefeito": "Didi Moita",
+      "partido_prefeito": "",
+      "votos_prefeito": 3600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "HILTON (?)",
+      "aliados": [
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "nome": "Lago Verde",
+      "lat": -4.05,
+      "lng": -44.8333,
+      "regiao": "Centro Maranhense",
+      "eleitores": 14560,
+      "prefeito": "Alex Almeida",
+      "partido_prefeito": "",
+      "votos_prefeito": 6700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "nome": "Lagoa do Mato",
+      "lat": -6.05,
+      "lng": -43.5333,
+      "regiao": "Cocais",
+      "eleitores": 9870,
+      "prefeito": "Nilton Ribeiro",
+      "partido_prefeito": "",
+      "votos_prefeito": 4500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "nome": "Lagoa Grande do Maranhão",
+      "lat": -4.8167,
+      "lng": -45.0,
+      "regiao": "Centro Maranhense",
+      "eleitores": 10230,
+      "prefeito": "Neres Policarpo",
+      "partido_prefeito": "",
+      "votos_prefeito": 4700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "",
+      "aliados": []
+    },
+    {
+      "id": 105,
+      "nome": "Lajeado Novo",
+      "lat": -6.1833,
+      "lng": -47.0333,
+      "regiao": "Região Tocantina",
+      "eleitores": 6230,
+      "prefeito": "Itaires Tratorzão",
+      "partido_prefeito": "",
+      "votos_prefeito": 2800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "",
+      "aliados": []
+    },
+    {
+      "id": 106,
+      "nome": "Lima Campos",
+      "lat": -4.5167,
+      "lng": -44.4667,
+      "regiao": "Mearim",
+      "eleitores": 11230,
+      "prefeito": "Jailson Fausto",
+      "partido_prefeito": "",
+      "votos_prefeito": 5100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "nome": "Loreto",
+      "lat": -7.0833,
+      "lng": -45.1333,
+      "regiao": "Sul do MA",
+      "eleitores": 10230,
+      "prefeito": "Germano Coelho",
+      "partido_prefeito": "",
+      "votos_prefeito": 4700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "nome": "Luís Domingues",
+      "lat": -1.2667,
+      "lng": -45.8667,
+      "regiao": "Norte Maranhense",
+      "eleitores": 6530,
+      "prefeito": "Izaque Cirino",
+      "partido_prefeito": "",
+      "votos_prefeito": 3000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "nome": "Magalhães de Almeida",
+      "lat": -3.3833,
+      "lng": -42.2,
+      "regiao": "Leste Maranhense",
+      "eleitores": 17560,
+      "prefeito": "Nonato Carvalho",
+      "partido_prefeito": "",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "nome": "Maracaçumé",
+      "lat": -2.05,
+      "lng": -45.9667,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 19560,
+      "prefeito": "Tio Gal",
+      "partido_prefeito": "",
+      "votos_prefeito": 9000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "nome": "Marajá do Sena",
+      "lat": -4.2833,
+      "lng": -45.45,
+      "regiao": "Centro Maranhense",
+      "eleitores": 7890,
+      "prefeito": "Neném Machado",
+      "partido_prefeito": "",
+      "votos_prefeito": 3600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "nome": "Maranhãozinho",
+      "lat": -2.2333,
+      "lng": -45.85,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 14320,
+      "prefeito": "Deusinha",
+      "partido_prefeito": "",
+      "votos_prefeito": 6500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "nome": "Mata Roma",
+      "lat": -3.6167,
+      "lng": -43.1,
+      "regiao": "Leste Maranhense",
+      "eleitores": 15340,
+      "prefeito": "Besaliel",
+      "partido_prefeito": "",
+      "votos_prefeito": 7000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "nome": "Matinha",
+      "lat": -3.1,
+      "lng": -45.0333,
+      "regiao": "Baixada",
+      "eleitores": 21890,
+      "prefeito": "Nilton Everton",
+      "partido_prefeito": "",
+      "votos_prefeito": 10000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "nome": "Matões",
+      "lat": -5.5167,
+      "lng": -43.2,
+      "regiao": "Cocais",
+      "eleitores": 31200,
+      "prefeito": "Nonatinho",
+      "partido_prefeito": "",
+      "votos_prefeito": 14300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "nome": "Matões do Norte",
+      "lat": -3.6333,
+      "lng": -44.55,
+      "regiao": "Baixada",
+      "eleitores": 13780,
+      "prefeito": "Solimar",
+      "partido_prefeito": "",
+      "votos_prefeito": 6300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "nome": "Milagres do Maranhão",
+      "lat": -3.5833,
+      "lng": -42.6,
+      "regiao": "Leste Maranhense",
+      "eleitores": 8230,
+      "prefeito": "Zé Augusto",
+      "partido_prefeito": "",
+      "votos_prefeito": 3700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "nome": "Mirador",
+      "lat": -6.3667,
+      "lng": -44.3667,
+      "regiao": "Sul do MA",
+      "eleitores": 20340,
+      "prefeito": "Domingas Cabral",
+      "partido_prefeito": "",
+      "votos_prefeito": 9300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "nome": "Miranda do Norte",
+      "lat": -3.5667,
+      "lng": -44.5833,
+      "regiao": "Baixada",
+      "eleitores": 24560,
+      "prefeito": "Ivaldo Ribeiro",
+      "partido_prefeito": "",
+      "votos_prefeito": 11300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON, HILTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "nome": "Mirinzal",
+      "lat": -2.0667,
+      "lng": -44.7833,
+      "regiao": "Baixada",
+      "eleitores": 14230,
+      "prefeito": "Deyvison do Posto",
+      "partido_prefeito": "",
+      "votos_prefeito": 6500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "nome": "Monção",
+      "lat": -3.4833,
+      "lng": -45.25,
+      "regiao": "Baixada",
+      "eleitores": 31200,
+      "prefeito": "Dra. Barbara",
+      "partido_prefeito": "",
+      "votos_prefeito": 14300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA - NÃO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "nome": "Montes Altos",
+      "lat": -5.8333,
+      "lng": -47.0667,
+      "regiao": "Região Tocantina",
+      "eleitores": 9340,
+      "prefeito": "Domingos França",
+      "partido_prefeito": "",
+      "votos_prefeito": 4200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "nome": "Morros",
+      "lat": -2.8667,
+      "lng": -44.0333,
+      "regiao": "Baixada",
+      "eleitores": 17890,
+      "prefeito": "Paraíba",
+      "partido_prefeito": "",
+      "votos_prefeito": 8200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "nome": "Nina Rodrigues",
+      "lat": -3.4667,
+      "lng": -43.9,
+      "regiao": "Cocais",
+      "eleitores": 12450,
+      "prefeito": "Jones Braga",
+      "partido_prefeito": "",
+      "votos_prefeito": 5700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "nome": "Nova Colinas",
+      "lat": -7.1167,
+      "lng": -46.25,
+      "regiao": "Sul do MA",
+      "eleitores": 5120,
+      "prefeito": "Dra. Mariana",
+      "partido_prefeito": "",
+      "votos_prefeito": 2300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "nome": "Nova Iorque",
+      "lat": -6.7333,
+      "lng": -44.0333,
+      "regiao": "Sul do MA",
+      "eleitores": 4320,
+      "prefeito": "Daniel Castro",
+      "partido_prefeito": "",
+      "votos_prefeito": 1900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "nome": "Nova Olinda do Maranhão",
+      "lat": -4.0833,
+      "lng": -45.7,
+      "regiao": "Centro Maranhense",
+      "eleitores": 19340,
+      "prefeito": "Ary Menezes",
+      "partido_prefeito": "PP",
+      "votos_prefeito": 8900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "nome": "Olho d'Água das Cunhãs",
+      "lat": -4.1333,
+      "lng": -45.1167,
+      "regiao": "Centro Maranhense",
+      "eleitores": 18230,
+      "prefeito": "Vaval Gomes",
+      "partido_prefeito": "",
+      "votos_prefeito": 8300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "nome": "Olinda Nova do Maranhão",
+      "lat": -2.9833,
+      "lng": -44.8333,
+      "regiao": "Baixada",
+      "eleitores": 13210,
+      "prefeito": "Valdenir",
+      "partido_prefeito": "",
+      "votos_prefeito": 6000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "nome": "Paço do Lumiar",
+      "lat": -2.5167,
+      "lng": -44.1,
+      "regiao": "Grande São Luís",
+      "eleitores": 125670,
+      "prefeito": "Fred Campos",
+      "partido_prefeito": "PSB",
+      "votos_prefeito": 46957,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 14087,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 99222-0012",
+          "cargo": "Prefeito",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "nome": "Palmeirândia",
+      "lat": -2.6333,
+      "lng": -44.8,
+      "regiao": "Baixada",
+      "eleitores": 18760,
+      "prefeito": "Edilson Alvorada",
+      "partido_prefeito": "",
+      "votos_prefeito": 8600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON (OBS DURANTE A SEMANA)",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "nome": "Paraibano",
+      "lat": -6.4333,
+      "lng": -43.9833,
+      "regiao": "Sul do MA",
+      "eleitores": 20100,
+      "prefeito": "Vanessa Furtado",
+      "partido_prefeito": "",
+      "votos_prefeito": 9200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ROSEANA E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "nome": "Parnarama",
+      "lat": -5.6833,
+      "lng": -43.1,
+      "regiao": "Cocais",
+      "eleitores": 34560,
+      "prefeito": "Juvenal Silva",
+      "partido_prefeito": "",
+      "votos_prefeito": 15900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "LAHESIO – NÃO",
+      "aliados": [
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "nome": "Passagem Franca",
+      "lat": -6.1833,
+      "lng": -43.7833,
+      "regiao": "Sul do MA",
+      "eleitores": 17560,
+      "prefeito": "Chicão da Parabólica",
+      "partido_prefeito": "",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "nome": "Pastos Bons",
+      "lat": -6.6,
+      "lng": -44.0833,
+      "regiao": "Sul do MA",
+      "eleitores": 18230,
+      "prefeito": "Enoque Mota",
+      "partido_prefeito": "",
+      "votos_prefeito": 8300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "nome": "Paulino Neves",
+      "lat": -2.7167,
+      "lng": -42.5333,
+      "regiao": "Delta do Parnaíba",
+      "eleitores": 14560,
+      "prefeito": "Raimundo Lidio",
+      "partido_prefeito": "",
+      "votos_prefeito": 6700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "nome": "Paulo Ramos",
+      "lat": -4.45,
+      "lng": -45.2333,
+      "regiao": "Centro Maranhense",
+      "eleitores": 20100,
+      "prefeito": "Adailson Machado",
+      "partido_prefeito": "",
+      "votos_prefeito": 9200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "nome": "Pedreiras",
+      "lat": -4.5667,
+      "lng": -44.6,
+      "regiao": "Mearim",
+      "eleitores": 39450,
+      "prefeito": "Vanessa Maia",
+      "partido_prefeito": "",
+      "votos_prefeito": 18100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ROSEANA E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "nome": "Pedro do Rosário",
+      "lat": -2.9667,
+      "lng": -45.35,
+      "regiao": "Baixada",
+      "eleitores": 22340,
+      "prefeito": "Toca Serra",
+      "partido_prefeito": "",
+      "votos_prefeito": 10200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "nome": "Penalva",
+      "lat": -3.2833,
+      "lng": -45.1667,
+      "regiao": "Baixada",
+      "eleitores": 34230,
+      "prefeito": "Guerra",
+      "partido_prefeito": "",
+      "votos_prefeito": 15700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA (?)",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "nome": "Peri Mirim",
+      "lat": -2.5833,
+      "lng": -44.85,
+      "regiao": "Baixada",
+      "eleitores": 13800,
+      "prefeito": "Heliezer do Povo",
+      "partido_prefeito": "",
+      "votos_prefeito": 6300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "nome": "Peritoró",
+      "lat": -4.3833,
+      "lng": -44.3333,
+      "regiao": "Cocais",
+      "eleitores": 21890,
+      "prefeito": "Dr. Junior",
+      "partido_prefeito": "",
+      "votos_prefeito": 10000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "nome": "Pindaré-Mirim",
+      "lat": -3.6,
+      "lng": -45.35,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 31200,
+      "prefeito": "Dr. Alexandre",
+      "partido_prefeito": "",
+      "votos_prefeito": 14300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ELIZIANE (VINICIUS FERRO ESTÁ EM CONVERSA)",
+      "aliados": [
+        {
+          "nome": "Eliziane",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "nome": "Pinheiro",
+      "lat": -2.5167,
+      "lng": -45.0833,
+      "regiao": "Baixada",
+      "eleitores": 78900,
+      "prefeito": "André da Ralnpet",
+      "partido_prefeito": "",
+      "votos_prefeito": 36200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA E LAHESIO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "nome": "Pio XII",
+      "lat": -3.8333,
+      "lng": -45.1667,
+      "regiao": "Baixada",
+      "eleitores": 22340,
+      "prefeito": "Aurélio",
+      "partido_prefeito": "",
+      "votos_prefeito": 10200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "nome": "Pirapemas",
+      "lat": -3.7167,
+      "lng": -44.2167,
+      "regiao": "Baixada",
+      "eleitores": 17560,
+      "prefeito": "Fernando Cutrim",
+      "partido_prefeito": "",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "nome": "Poção de Pedras",
+      "lat": -4.7333,
+      "lng": -44.9333,
+      "regiao": "Mearim",
+      "eleitores": 19870,
+      "prefeito": "Jhulio Sousa",
+      "partido_prefeito": "",
+      "votos_prefeito": 9100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "nome": "Porto Franco",
+      "lat": -6.3333,
+      "lng": -47.4,
+      "regiao": "Região Tocantina",
+      "eleitores": 21450,
+      "prefeito": "Deoclides Macedo",
+      "partido_prefeito": "",
+      "votos_prefeito": 9800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "",
+      "aliados": []
+    },
+    {
+      "id": 149,
+      "nome": "Porto Rico do Maranhão",
+      "lat": -1.9,
+      "lng": -44.6,
+      "regiao": "Baixada",
+      "eleitores": 6230,
+      "prefeito": "Aldo Brown",
+      "partido_prefeito": "",
+      "votos_prefeito": 2800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "nome": "Presidente Dutra",
+      "lat": -5.2833,
+      "lng": -44.4833,
+      "regiao": "Centro Maranhense",
+      "eleitores": 47340,
+      "prefeito": "Raimundo da Audiolar",
+      "partido_prefeito": "",
+      "votos_prefeito": 21700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "nome": "Presidente Juscelino",
+      "lat": -3.2,
+      "lng": -44.05,
+      "regiao": "Baixada",
+      "eleitores": 11540,
+      "prefeito": "Dr. Pedro Paulo",
+      "partido_prefeito": "",
+      "votos_prefeito": 5300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E HILTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "nome": "Presidente Médici",
+      "lat": -2.3833,
+      "lng": -45.8167,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 6530,
+      "prefeito": "Dr. Caçula",
+      "partido_prefeito": "",
+      "votos_prefeito": 3000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "nome": "Presidente Sarney",
+      "lat": -2.5833,
+      "lng": -44.9667,
+      "regiao": "Baixada",
+      "eleitores": 17120,
+      "prefeito": "Gilson Lima",
+      "partido_prefeito": "",
+      "votos_prefeito": 7800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "",
+      "aliados": []
+    },
+    {
+      "id": 154,
+      "nome": "Presidente Vargas",
+      "lat": -3.4167,
+      "lng": -44.0167,
+      "regiao": "Baixada",
+      "eleitores": 10750,
+      "prefeito": "Fabiana Mendes",
+      "partido_prefeito": "",
+      "votos_prefeito": 4900,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "nome": "Primeira Cruz",
+      "lat": -2.5167,
+      "lng": -43.45,
+      "regiao": "Leste Maranhense",
+      "eleitores": 14320,
+      "prefeito": "Dr. Guilherme",
+      "partido_prefeito": "",
+      "votos_prefeito": 6500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "",
+      "aliados": []
+    },
+    {
+      "id": 156,
+      "nome": "Raposa",
+      "lat": -2.4667,
+      "lng": -44.0833,
+      "regiao": "Grande São Luís",
+      "eleitores": 38900,
+      "prefeito": "Eudes Barros",
+      "partido_prefeito": "Republicanos",
+      "votos_prefeito": 13200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 3960,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON (FALAR COM JOSIMAR –?)",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "(98) 97000-0067",
+          "cargo": "Prefeito",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "nome": "Riachão",
+      "lat": -7.35,
+      "lng": -46.6167,
+      "regiao": "Sul do MA",
+      "eleitores": 20340,
+      "prefeito": "Paula Coelho",
+      "partido_prefeito": "",
+      "votos_prefeito": 9300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "nome": "Ribamar Fiquene",
+      "lat": -5.9333,
+      "lng": -47.3833,
+      "regiao": "Região Tocantina",
+      "eleitores": 7340,
+      "prefeito": "Cociflan Silva",
+      "partido_prefeito": "",
+      "votos_prefeito": 3300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA (OBS -?)",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "nome": "Rosário",
+      "lat": -2.9333,
+      "lng": -44.2333,
+      "regiao": "Baixada",
+      "eleitores": 39450,
+      "prefeito": "Jonas Magno",
+      "partido_prefeito": "",
+      "votos_prefeito": 18100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "nome": "Sambaíba",
+      "lat": -7.1333,
+      "lng": -45.35,
+      "regiao": "Sul do MA",
+      "eleitores": 5870,
+      "prefeito": "Fátima Dantas",
+      "partido_prefeito": "",
+      "votos_prefeito": 2600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "nome": "Santa Filomena do Maranhão",
+      "lat": -5.5,
+      "lng": -44.5667,
+      "regiao": "Sul do MA",
+      "eleitores": 6530,
+      "prefeito": "Salomão",
+      "partido_prefeito": "",
+      "votos_prefeito": 3000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 162,
+      "nome": "Santa Helena",
+      "lat": -2.2333,
+      "lng": -45.3,
+      "regiao": "Baixada",
+      "eleitores": 39450,
+      "prefeito": "Joãozinho Pavão",
+      "partido_prefeito": "",
+      "votos_prefeito": 18100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ROSEANA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "nome": "Santa Inês",
+      "lat": -3.6667,
+      "lng": -45.3833,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 78560,
+      "prefeito": "Felipe dos Pneus",
+      "partido_prefeito": "",
+      "votos_prefeito": 36000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "nome": "Santa Luzia",
+      "lat": -4.0667,
+      "lng": -45.6833,
+      "regiao": "Centro Maranhense",
+      "eleitores": 74300,
+      "prefeito": "Juscelino Marreca",
+      "partido_prefeito": "",
+      "votos_prefeito": 34100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA / ?",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "nome": "Santa Luzia do Paruá",
+      "lat": -2.5333,
+      "lng": -45.7667,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 22640,
+      "prefeito": "Vilson Ferraz",
+      "partido_prefeito": "",
+      "votos_prefeito": 10400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "nome": "Santa Quitéria do Maranhão",
+      "lat": -3.5167,
+      "lng": -42.55,
+      "regiao": "Leste Maranhense",
+      "eleitores": 24560,
+      "prefeito": "Sâmia Moreira",
+      "partido_prefeito": "",
+      "votos_prefeito": 11300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "nome": "Santa Rita",
+      "lat": -3.15,
+      "lng": -44.3167,
+      "regiao": "Baixada",
+      "eleitores": 23450,
+      "prefeito": "Dr. Milton Gonçalo",
+      "partido_prefeito": "",
+      "votos_prefeito": 10700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "HILTON E ?(QUINTA)",
+      "aliados": [
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "nome": "Santana do Maranhão",
+      "lat": -3.1167,
+      "lng": -42.4,
+      "regiao": "Leste Maranhense",
+      "eleitores": 11670,
+      "prefeito": "Marcio Santiago",
+      "partido_prefeito": "",
+      "votos_prefeito": 5300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "nome": "Santo Amaro do Maranhão",
+      "lat": -2.5,
+      "lng": -43.25,
+      "regiao": "Leste Maranhense",
+      "eleitores": 13800,
+      "prefeito": "Leandro Moura",
+      "partido_prefeito": "",
+      "votos_prefeito": 6300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA E ELIZIANE",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Eliziane",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "nome": "Santo Antônio dos Lopes",
+      "lat": -4.8667,
+      "lng": -44.3667,
+      "regiao": "Centro Maranhense",
+      "eleitores": 14230,
+      "prefeito": "Cibelle Napoleão",
+      "partido_prefeito": "",
+      "votos_prefeito": 6500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA E LAHESIO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "nome": "São Benedito do Rio Preto",
+      "lat": -3.3333,
+      "lng": -43.5167,
+      "regiao": "Leste Maranhense",
+      "eleitores": 17560,
+      "prefeito": "Wallas Rocha",
+      "partido_prefeito": "",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "nome": "São Bento",
+      "lat": -2.7,
+      "lng": -44.8167,
+      "regiao": "Baixada",
+      "eleitores": 40340,
+      "prefeito": "Dino Penha",
+      "partido_prefeito": "",
+      "votos_prefeito": 18500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 173,
+      "nome": "São Bernardo",
+      "lat": -3.3667,
+      "lng": -42.4167,
+      "regiao": "Leste Maranhense",
+      "eleitores": 26540,
+      "prefeito": "Chico Carvalho",
+      "partido_prefeito": "",
+      "votos_prefeito": 12200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 174,
+      "nome": "São Domingos do Azeitão",
+      "lat": -6.8167,
+      "lng": -44.65,
+      "regiao": "Sul do MA",
+      "eleitores": 6830,
+      "prefeito": "Junior do Posto",
+      "partido_prefeito": "",
+      "votos_prefeito": 3100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA E LAHESIO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 175,
+      "nome": "São Domingos do Maranhão",
+      "lat": -5.5833,
+      "lng": -44.3833,
+      "regiao": "Sul do MA",
+      "eleitores": 33670,
+      "prefeito": "Tratorzão",
+      "partido_prefeito": "",
+      "votos_prefeito": 15400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA E HILTON",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 176,
+      "nome": "São Félix de Balsas",
+      "lat": -7.0833,
+      "lng": -44.8,
+      "regiao": "Sul do MA",
+      "eleitores": 4530,
+      "prefeito": "Heider Nunes",
+      "partido_prefeito": "",
+      "votos_prefeito": 2000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 177,
+      "nome": "São Francisco do Brejão",
+      "lat": -5.1167,
+      "lng": -47.3833,
+      "regiao": "Região Tocantina",
+      "eleitores": 10230,
+      "prefeito": "Edinalva Brandão",
+      "partido_prefeito": "",
+      "votos_prefeito": 4700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "NÃO",
+      "aliados": []
+    },
+    {
+      "id": 178,
+      "nome": "São Francisco do Maranhão",
+      "lat": -6.25,
+      "lng": -42.8667,
+      "regiao": "Sul do MA",
+      "eleitores": 12180,
+      "prefeito": "Francisco do Posto",
+      "partido_prefeito": "",
+      "votos_prefeito": 5600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 179,
+      "nome": "São João Batista",
+      "lat": -2.95,
+      "lng": -44.8,
+      "regiao": "Baixada",
+      "eleitores": 19870,
+      "prefeito": "Mecinho",
+      "partido_prefeito": "",
+      "votos_prefeito": 9100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "",
+      "aliados": []
+    },
+    {
+      "id": 180,
+      "nome": "São João do Carú",
+      "lat": -3.3667,
+      "lng": -45.8,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 12340,
+      "prefeito": "Peteca",
+      "partido_prefeito": "",
+      "votos_prefeito": 5600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "nome": "São João do Paraíso",
+      "lat": -6.45,
+      "lng": -47.0667,
+      "regiao": "Região Tocantina",
+      "eleitores": 10980,
+      "prefeito": "Marcos Vinicius",
+      "partido_prefeito": "",
+      "votos_prefeito": 5000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E LAHESIO",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "nome": "São João do Soter",
+      "lat": -5.1167,
+      "lng": -43.8167,
+      "regiao": "Leste Maranhense",
+      "eleitores": 17560,
+      "prefeito": "Lacerda",
+      "partido_prefeito": "",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "nome": "São João dos Patos",
+      "lat": -6.5,
+      "lng": -43.7,
+      "regiao": "Sul do MA",
+      "eleitores": 24560,
+      "prefeito": "Dr. Alexandre",
+      "partido_prefeito": "",
+      "votos_prefeito": 11300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "nome": "São José de Ribamar",
+      "lat": -2.5627,
+      "lng": -44.0545,
+      "regiao": "Grande São Luís",
+      "eleitores": 178456,
+      "prefeito": "Dr. Julinho",
+      "partido_prefeito": "PL",
+      "votos_prefeito": 42500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ROSEANA E HILTON",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "nome": "São José dos Basílios",
+      "lat": -5.05,
+      "lng": -44.5833,
+      "regiao": "Centro Maranhense",
+      "eleitores": 7430,
+      "prefeito": "Ronaldo Vieira",
+      "partido_prefeito": "",
+      "votos_prefeito": 3400,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 186,
+      "nome": "São Luís",
+      "lat": -2.5307,
+      "lng": -44.3068,
+      "regiao": "Grande São Luís",
+      "eleitores": 746828,
+      "prefeito": "Professora Esmênia",
+      "partido_prefeito": "",
+      "votos_prefeito": 403981,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "FUFUCA E LAHESIO",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "nome": "São Luís Gonzaga do Maranhão",
+      "lat": -4.3833,
+      "lng": -44.6667,
+      "regiao": "Centro Maranhense",
+      "eleitores": 20100,
+      "prefeito": "Emanoel Filho",
+      "partido_prefeito": "",
+      "votos_prefeito": 9200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 188,
+      "nome": "São Mateus do Maranhão",
+      "lat": -4.0333,
+      "lng": -44.4667,
+      "regiao": "Centro Maranhense",
+      "eleitores": 39450,
+      "prefeito": "Miltinho Aragão",
+      "partido_prefeito": "",
+      "votos_prefeito": 18100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "nome": "São Pedro da Água Branca",
+      "lat": -5.0667,
+      "lng": -48.4333,
+      "regiao": "Região Tocantina",
+      "eleitores": 12450,
+      "prefeito": "Samuel Ribeiro",
+      "partido_prefeito": "",
+      "votos_prefeito": 5700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "nome": "São Pedro dos Crentes",
+      "lat": -6.8333,
+      "lng": -46.5333,
+      "regiao": "Sul do MA",
+      "eleitores": 4530,
+      "prefeito": "Romulo Arruda",
+      "partido_prefeito": "",
+      "votos_prefeito": 2000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "LAHESIO E HILTON",
+      "aliados": [
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "nome": "São Raimundo das Mangabeiras",
+      "lat": -7.0167,
+      "lng": -45.4833,
+      "regiao": "Sul do MA",
+      "eleitores": 17560,
+      "prefeito": "Accioly",
+      "partido_prefeito": "",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "nome": "São Raimundo do Doca Bezerra",
+      "lat": -5.1167,
+      "lng": -45.0,
+      "regiao": "Mearim",
+      "eleitores": 6090,
+      "prefeito": "Jacinto Neto",
+      "partido_prefeito": "",
+      "votos_prefeito": 2800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "OPOSIÇÃO",
+      "aliados": []
+    },
+    {
+      "id": 193,
+      "nome": "São Roberto",
+      "lat": -5.0167,
+      "lng": -45.0,
+      "regiao": "Mearim",
+      "eleitores": 5670,
+      "prefeito": "Danielly Trabulsi",
+      "partido_prefeito": "",
+      "votos_prefeito": 2600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "NÃO",
+      "aliados": []
+    },
+    {
+      "id": 194,
+      "nome": "São Vicente Ferrer",
+      "lat": -2.9,
+      "lng": -44.8833,
+      "regiao": "Baixada",
+      "eleitores": 20100,
+      "prefeito": "Adriano Freitas",
+      "partido_prefeito": "",
+      "votos_prefeito": 9200,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 195,
+      "nome": "Satubinha",
+      "lat": -4.7333,
+      "lng": -45.2333,
+      "regiao": "Centro Maranhense",
+      "eleitores": 11960,
+      "prefeito": "Santos Franklin",
+      "partido_prefeito": "",
+      "votos_prefeito": 5500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ROSEANA E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "nome": "Senador Alexandre Costa",
+      "lat": -5.25,
+      "lng": -44.05,
+      "regiao": "Cocais",
+      "eleitores": 10230,
+      "prefeito": "Dr. Nilo",
+      "partido_prefeito": "",
+      "votos_prefeito": 4700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "OPOSIÇÃO",
+      "aliados": []
+    },
+    {
+      "id": 197,
+      "nome": "Senador La Rocque",
+      "lat": -5.45,
+      "lng": -47.3,
+      "regiao": "Região Tocantina",
+      "eleitores": 17560,
+      "prefeito": "Prof. Bartolomeu",
+      "partido_prefeito": "",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ELIZIANE E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Eliziane",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "nome": "Serrano do Maranhão",
+      "lat": -1.85,
+      "lng": -45.1333,
+      "regiao": "Baixada",
+      "eleitores": 10980,
+      "prefeito": "Val Cunha",
+      "partido_prefeito": "",
+      "votos_prefeito": 5000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "nome": "Sítio Novo",
+      "lat": -5.8833,
+      "lng": -46.7,
+      "regiao": "Região Tocantina",
+      "eleitores": 17560,
+      "prefeito": "Antonio Coelho",
+      "partido_prefeito": "",
+      "votos_prefeito": 8000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "ELIZIANE (CONFIRMAR COM VAGTÔNIO - ?)",
+      "aliados": [
+        {
+          "nome": "Eliziane",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 200,
+      "nome": "Sucupira do Norte",
+      "lat": -6.4833,
+      "lng": -44.1833,
+      "regiao": "Sul do MA",
+      "eleitores": 10450,
+      "prefeito": "Marcony",
+      "partido_prefeito": "",
+      "votos_prefeito": 4800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ROSEANA E HILTON",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Hilton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "nome": "Sucupira do Riachão",
+      "lat": -6.4167,
+      "lng": -43.55,
+      "regiao": "Sul do MA",
+      "eleitores": 4530,
+      "prefeito": "Walter Azevedo",
+      "partido_prefeito": "",
+      "votos_prefeito": 2000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "nome": "Tasso Fragoso",
+      "lat": -8.4667,
+      "lng": -45.75,
+      "regiao": "Sul do MA",
+      "eleitores": 8450,
+      "prefeito": "Kelson",
+      "partido_prefeito": "",
+      "votos_prefeito": 3800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "OPOSIÇÃO",
+      "aliados": []
+    },
+    {
+      "id": 203,
+      "nome": "Timbiras",
+      "lat": -4.25,
+      "lng": -43.9333,
+      "regiao": "Cocais",
+      "eleitores": 27980,
+      "prefeito": "Paulo Vinicius",
+      "partido_prefeito": "",
+      "votos_prefeito": 12800,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "nome": "Timon",
+      "lat": -5.1,
+      "lng": -42.8333,
+      "regiao": "Leste Maranhense",
+      "eleitores": 155660,
+      "prefeito": "Rafael",
+      "partido_prefeito": "",
+      "votos_prefeito": 71500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "ROSEANA E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "nome": "Trizidela do Vale",
+      "lat": -4.5333,
+      "lng": -44.6333,
+      "regiao": "Mearim",
+      "eleitores": 18920,
+      "prefeito": "Dr. Deibson Balé",
+      "partido_prefeito": "",
+      "votos_prefeito": 8700,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "nome": "Tufilândia",
+      "lat": -3.6333,
+      "lng": -45.55,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 6530,
+      "prefeito": "Emanuel Ricardo",
+      "partido_prefeito": "",
+      "votos_prefeito": 3000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "nome": "Tuntum",
+      "lat": -5.2667,
+      "lng": -44.65,
+      "regiao": "Centro Maranhense",
+      "eleitores": 39450,
+      "prefeito": "Fernando Pessoa",
+      "partido_prefeito": "",
+      "votos_prefeito": 18100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "nome": "Turiaçu",
+      "lat": -1.6667,
+      "lng": -45.3833,
+      "regiao": "Norte Maranhense",
+      "eleitores": 33340,
+      "prefeito": "Edésio Cavalcanti",
+      "partido_prefeito": "",
+      "votos_prefeito": 15300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 209,
+      "nome": "Turilândia",
+      "lat": -2.2,
+      "lng": -45.3,
+      "regiao": "Baixada",
+      "eleitores": 23450,
+      "prefeito": "",
+      "partido_prefeito": "",
+      "votos_prefeito": 0,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "nome": "Tutóia",
+      "lat": -2.7667,
+      "lng": -42.2833,
+      "regiao": "Delta do Parnaíba",
+      "eleitores": 52340,
+      "prefeito": "Viriato Cardoso",
+      "partido_prefeito": "",
+      "votos_prefeito": 24000,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "verde",
+      "percentual_alianca": 80,
+      "coordenador": "",
+      "observacoes": "WEVERTON",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "forte"
+        }
+      ]
+    },
+    {
+      "id": 211,
+      "nome": "Urbano Santos",
+      "lat": -3.2167,
+      "lng": -43.4,
+      "regiao": "Leste Maranhense",
+      "eleitores": 24560,
+      "prefeito": "Prof. Clemilton Barros",
+      "partido_prefeito": "",
+      "votos_prefeito": 11300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E ROSEANA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "nome": "Vargem Grande",
+      "lat": -3.5333,
+      "lng": -43.9167,
+      "regiao": "Leste Maranhense",
+      "eleitores": 49340,
+      "prefeito": "Preto",
+      "partido_prefeito": "",
+      "votos_prefeito": 22600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "FUFUCA",
+      "aliados": [
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "nome": "Viana",
+      "lat": -3.2167,
+      "lng": -45.0,
+      "regiao": "Baixada",
+      "eleitores": 49340,
+      "prefeito": "Carrinho Cidreira",
+      "partido_prefeito": "",
+      "votos_prefeito": 22600,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 214,
+      "nome": "Vila Nova dos Martírios",
+      "lat": -5.1833,
+      "lng": -48.1333,
+      "regiao": "Região Tocantina",
+      "eleitores": 11230,
+      "prefeito": "Jorge Vieira",
+      "partido_prefeito": "",
+      "votos_prefeito": 5100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "vermelho",
+      "percentual_alianca": 0,
+      "coordenador": "",
+      "observacoes": "(FALAR COM JOSIMAR)",
+      "aliados": []
+    },
+    {
+      "id": 215,
+      "nome": "Vitória do Mearim",
+      "lat": -3.45,
+      "lng": -44.8667,
+      "regiao": "Baixada",
+      "eleitores": 31200,
+      "prefeito": "Nato da Nordestina",
+      "partido_prefeito": "",
+      "votos_prefeito": 14300,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "nome": "Vitorino Freire",
+      "lat": -4.05,
+      "lng": -45.25,
+      "regiao": "Centro Maranhense",
+      "eleitores": 31560,
+      "prefeito": "Gabi Viana",
+      "partido_prefeito": "",
+      "votos_prefeito": 14500,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "nome": "Zé Doca",
+      "lat": -3.2667,
+      "lng": -45.65,
+      "regiao": "Pindaré/Mearim",
+      "eleitores": 50340,
+      "prefeito": "Flavinha Cunha",
+      "partido_prefeito": "",
+      "votos_prefeito": 23100,
+      "transferencia_esperada": 30,
+      "votos_transferidos": 0,
+      "status": "amarelo",
+      "percentual_alianca": 50,
+      "coordenador": "",
+      "observacoes": "WEVERTON E FUFUCA",
+      "aliados": [
+        {
+          "nome": "Weverton",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        }
+      ]
+    }
+  ]
+}
