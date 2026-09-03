@@ -8,6 +8,9 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Leaflet Heat (mapa de calor) -->
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
     
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -34,6 +37,9 @@
             <div class="tempo-restante">
                 <i class="fas fa-clock"></i> <span id="diasRestantes">34</span> dias
             </div>
+            <button class="btn-toggle-calor" id="btnToggleCalor">
+                <i class="fas fa-fire"></i> Mapa de Calor
+            </button>
         </div>
         <div class="header-right">
             <div class="card-stat">
@@ -46,7 +52,7 @@
             </div>
             <div class="card-stat">
                 <span class="numero" id="votosProjetados">0</span>
-                <span class="label">Projetados</span>
+                <span class="label">Transferência</span>
             </div>
             <div class="card-stat">
                 <span class="numero" id="diferencaMeta">0</span>
@@ -232,7 +238,7 @@
         </div>
 
         <div class="panel-section">
-            <h3><i class="fas fa-trophy"></i> Top 10</h3>
+            <h3><i class="fas fa-trophy"></i> Top 10 Colégios Eleitorais</h3>
             <div id="listaRankingMini"></div>
         </div>
     </div>
@@ -287,6 +293,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>

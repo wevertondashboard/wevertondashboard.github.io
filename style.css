@@ -111,6 +111,32 @@ body {
     font-weight: 700;
 }
 
+.btn-toggle-calor {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.06);
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.12);
+    cursor: pointer;
+    transition: all 0.25s;
+    white-space: nowrap;
+}
+
+.btn-toggle-calor:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+.btn-toggle-calor.active {
+    background: linear-gradient(90deg, #e74c3c, #f1c40f);
+    border-color: transparent;
+    color: #1a1a1a;
+}
+
 .header-right {
     display: flex;
     gap: 10px;

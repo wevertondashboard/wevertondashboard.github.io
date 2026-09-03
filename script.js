@@ -8,6 +8,8 @@ let marcadores = [];
 let miniMapas = {};
 let panelVisible = true;
 let pesquisasVisible = true;
+let heatLayer = null;
+let modoCalor = false;
 
 let filtros = {
     regiao: 'todas',
@@ -43,6 +45,7 @@ async function carregarDados() {
         configurarMiniMapasClick();
         configurarTogglePanel();
         configurarTogglePesquisas();
+        configurarBotaoCalor();
         atualizarBadgesMiniMapas();
         
         console.log(`✅ Carregados ${dadosCidades.length} municípios`);
@@ -117,18 +120,27 @@ function inicializarMapa() {
 }
 
 // ============================================================
-// ADICIONAR MARCADORES
+// FILTRAR CIDADES (usado tanto pelos pontos quanto pelo mapa de calor)
 // ============================================================
-function adicionarMarcadores() {
-    marcadores.forEach(m => mapa.removeLayer(m));
-    marcadores = [];
-
-    let cidadesFiltradas = dadosCidades.filter(cidade => {
+function getCidadesFiltradas() {
+    return dadosCidades.filter(cidade => {
         if (filtros.regiao !== 'todas' && cidade.regiao !== filtros.regiao) return false;
         if (filtros.status !== 'todos' && cidade.status !== filtros.status) return false;
         if (filtros.busca && !cidade.nome.toLowerCase().includes(filtros.busca.toLowerCase())) return false;
         return true;
     });
+}
+
+// ============================================================
+// ADICIONAR MARCADORES
+// ============================================================
+function adicionarMarcadores() {
+    if (modoCalor) return; // no modo calor, quem desenha é atualizarMapaCalor()
+
+    marcadores.forEach(m => mapa.removeLayer(m));
+    marcadores = [];
+
+    let cidadesFiltradas = getCidadesFiltradas();
 
     cidadesFiltradas.forEach(cidade => {
         let cor = '#95a5a6';
@@ -183,6 +195,79 @@ function adicionarMarcadores() {
         });
 
         marcadores.push(circulo);
+    });
+
+    // Quando há uma busca ativa, focar automaticamente no(s) resultado(s)
+    // Sem isso, o filtro "funciona" mas é imperceptível num mapa com 217 pontinhos.
+    if (filtros.busca && filtros.busca.trim() !== '') {
+        if (cidadesFiltradas.length === 1) {
+            const c = cidadesFiltradas[0];
+            mapa.setView([c.lat, c.lng], 12);
+            setTimeout(() => {
+                const marcador = marcadores[0];
+                if (marcador) marcador.openPopup();
+            }, 350);
+        } else if (cidadesFiltradas.length > 1) {
+            const grupo = L.featureGroup(marcadores);
+            mapa.fitBounds(grupo.getBounds().pad(0.3));
+        } else {
+            mapa.setView([-5.5, -45.5], 6);
+        }
+    }
+}
+
+// ============================================================
+// MAPA DE CALOR
+// ============================================================
+function atualizarMapaCalor() {
+    if (heatLayer) {
+        mapa.removeLayer(heatLayer);
+        heatLayer = null;
+    }
+
+    const cidadesFiltradas = getCidadesFiltradas();
+
+    const pontos = cidadesFiltradas.map(c => {
+        // intensidade baseada no nº de eleitores (colégio eleitoral maior = ponto mais quente)
+        const intensidade = Math.min(1, (c.eleitores || 0) / 150000);
+        return [c.lat, c.lng, Math.max(0.15, intensidade)];
+    });
+
+    heatLayer = L.heatLayer(pontos, {
+        radius: 32,
+        blur: 28,
+        maxZoom: 10,
+        minOpacity: 0.35,
+        gradient: {
+            0.2: '#3498db',
+            0.4: '#2ecc71',
+            0.6: '#f1c40f',
+            0.8: '#e67e22',
+            1.0: '#e74c3c'
+        }
+    }).addTo(mapa);
+}
+
+function configurarBotaoCalor() {
+    const btn = document.getElementById('btnToggleCalor');
+    btn.addEventListener('click', () => {
+        modoCalor = !modoCalor;
+
+        if (modoCalor) {
+            marcadores.forEach(m => mapa.removeLayer(m));
+            marcadores = [];
+            atualizarMapaCalor();
+            btn.classList.add('active');
+            btn.innerHTML = '<i class="fas fa-map-marker-alt"></i> Ver Pontos';
+        } else {
+            if (heatLayer) {
+                mapa.removeLayer(heatLayer);
+                heatLayer = null;
+            }
+            btn.classList.remove('active');
+            btn.innerHTML = '<i class="fas fa-fire"></i> Mapa de Calor';
+            adicionarMarcadores();
+        }
     });
 }
 
@@ -510,7 +595,7 @@ function preencherRankingMini() {
     const container = document.getElementById('listaRankingMini');
     container.innerHTML = '';
     
-    const sorted = [...dadosCidades].sort((a, b) => (b.votos_transferidos || 0) - (a.votos_transferidos || 0));
+    const sorted = [...dadosCidades].sort((a, b) => (b.eleitores || 0) - (a.eleitores || 0));
     const top10 = sorted.slice(0, 10);
     
     top10.forEach((cidade, index) => {
@@ -519,7 +604,7 @@ function preencherRankingMini() {
         div.innerHTML = `
             <span class="posicao">#${index + 1}</span>
             <span class="nome-cidade">${cidade.nome}</span>
-            <span class="votos">${(cidade.votos_transferidos || 0).toLocaleString()}</span>
+            <span class="votos">${(cidade.eleitores || 0).toLocaleString()}</span>
         `;
         div.onclick = () => {
             if (cidade.lat && cidade.lng) {
@@ -626,17 +711,22 @@ function configurarTogglePesquisas() {
 function configurarEventos() {
     document.getElementById('filtroRegiao').addEventListener('change', (e) => {
         filtros.regiao = e.target.value;
-        adicionarMarcadores();
+        if (modoCalor) atualizarMapaCalor(); else adicionarMarcadores();
     });
     
     document.getElementById('filtroStatus').addEventListener('change', (e) => {
         filtros.status = e.target.value;
-        adicionarMarcadores();
+        if (modoCalor) atualizarMapaCalor(); else adicionarMarcadores();
     });
     
+    let buscaTimeout;
     document.getElementById('buscaCidade').addEventListener('input', (e) => {
-        filtros.busca = e.target.value;
-        adicionarMarcadores();
+        clearTimeout(buscaTimeout);
+        const valor = e.target.value;
+        buscaTimeout = setTimeout(() => {
+            filtros.busca = valor;
+            if (modoCalor) atualizarMapaCalor(); else adicionarMarcadores();
+        }, 400);
     });
 }
 
