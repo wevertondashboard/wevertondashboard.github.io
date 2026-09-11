@@ -60,6 +60,10 @@ async function carregarDados() {
 // CALCULAR STATUS (verde/amarelo/vermelho) A PARTIR DAS OBSERVAÇÕES
 // ============================================================
 function calcularStatusPorObservacao(cidade) {
+    // Se a cidade estiver marcada manualmente como "forçar verde",
+    // ela é verde independente de quais nomes apareçam nas observações/aliados.
+    if (cidade.forcar_verde === true) return 'verde';
+
     const obs = (cidade.observacoes || '').toUpperCase();
     const aliadosNomes = (cidade.aliados || []).map(a => (a.nome || '').toUpperCase());
 

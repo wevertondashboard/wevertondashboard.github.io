@@ -252,7 +252,7 @@
       "status": "verde",
       "percentual_alianca": 80,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON (FALAR COM DEP HONAISER)",
       "aliados": [
         {
           "nome": "Weverton",
@@ -261,7 +261,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 10,
@@ -695,10 +696,10 @@
       "votos_prefeito": null,
       "transferencia_esperada": 30,
       "votos_transferidos": 4000,
-      "status": "amarelo",
+      "status": "verde",
       "percentual_alianca": 0,
       "coordenador": "",
-      "observacoes": "WEVERTON - 4.000 VOTOS GARANTIDOS (INDEPENDENTE DE 1º OU 2º VOTO)",
+      "observacoes": "WEVERTON E FUFUCA - NÃO (4.000 VOTOS FIXOS NA SOMA GERAL)",
       "aliados": [
         {
           "nome": "Weverton",
@@ -706,8 +707,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 25,
@@ -764,7 +773,7 @@
       "status": "verde",
       "percentual_alianca": 0,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E ROSEANA (VINICIUS FERRO ESTÁ EM CONVERSA)",
       "aliados": [
         {
           "nome": "Weverton",
@@ -772,8 +781,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 27,
@@ -865,7 +882,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 30,
@@ -1458,7 +1476,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 51,
@@ -1508,7 +1527,7 @@
       "status": "verde",
       "percentual_alianca": 0,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E FUFUCA - NÃO",
       "aliados": [
         {
           "nome": "Weverton",
@@ -1516,8 +1535,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 53,
@@ -1649,7 +1676,7 @@
       "votos_prefeito": null,
       "transferencia_esperada": 30,
       "votos_transferidos": 15152,
-      "status": "amarelo",
+      "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
       "observacoes": "WEVERTON E FUFUCA",
@@ -1657,8 +1684,8 @@
         {
           "nome": "Weverton",
           "partido": "",
-          "contato": "(98) 99131-2401",
-          "cargo": "Prefeita",
+          "contato": "",
+          "cargo": "",
           "forca": "medio"
         },
         {
@@ -1668,7 +1695,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 58,
@@ -1711,7 +1739,7 @@
       "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E FUFUCA",
       "aliados": [
         {
           "nome": "Weverton",
@@ -1719,8 +1747,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 60,
@@ -1882,7 +1918,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 66,
@@ -1969,7 +2006,7 @@
       "status": "verde",
       "percentual_alianca": 80,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON (CONFIRMAR COM JOSIMAR - ?)",
       "aliados": [
         {
           "nome": "Weverton",
@@ -1978,7 +2015,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 70,
@@ -2087,7 +2125,7 @@
       "status": "verde",
       "percentual_alianca": 0,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E LAHESIO",
       "aliados": [
         {
           "nome": "Weverton",
@@ -2095,8 +2133,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 74,
@@ -2205,7 +2251,7 @@
       "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E ROSEANA",
       "aliados": [
         {
           "nome": "Weverton",
@@ -2213,8 +2259,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 78,
@@ -3081,7 +3135,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 108,
@@ -3291,7 +3346,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 115,
@@ -3305,10 +3361,10 @@
       "votos_prefeito": null,
       "transferencia_esperada": 30,
       "votos_transferidos": 5058,
-      "status": "amarelo",
+      "status": "verde",
       "percentual_alianca": 80,
       "coordenador": "",
-      "observacoes": "WEVERTON - 2º VOTO",
+      "observacoes": "WEVERTON",
       "aliados": [
         {
           "nome": "Weverton",
@@ -3317,7 +3373,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 116,
@@ -3857,10 +3914,10 @@
       "votos_prefeito": null,
       "transferencia_esperada": 30,
       "votos_transferidos": 5261,
-      "status": "amarelo",
+      "status": "verde",
       "percentual_alianca": 0,
       "coordenador": "",
-      "observacoes": "WEVERTON (2º VOTO) E LAHESIO (1º VOTO)",
+      "observacoes": "WEVERTON E LAHESIO - NÃO",
       "aliados": [
         {
           "nome": "Weverton",
@@ -3876,7 +3933,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 134,
@@ -4136,7 +4194,7 @@
       "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E ROSEANA",
       "aliados": [
         {
           "nome": "Weverton",
@@ -4144,8 +4202,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 143,
@@ -4188,7 +4254,7 @@
       "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON, FUFUCA E LAHESIO",
       "aliados": [
         {
           "nome": "Weverton",
@@ -4196,8 +4262,23 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 145,
@@ -4476,10 +4557,10 @@
       "votos_prefeito": null,
       "transferencia_esperada": 30,
       "votos_transferidos": 2306,
-      "status": "amarelo",
+      "status": "verde",
       "percentual_alianca": 0,
       "coordenador": "",
-      "observacoes": "WEVERTON - 2º VOTO",
+      "observacoes": "WEVERTON",
       "aliados": [
         {
           "nome": "Weverton",
@@ -4488,7 +4569,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 156,
@@ -4540,7 +4622,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 158,
@@ -4618,7 +4701,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 161,
@@ -4713,7 +4797,7 @@
       "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E FUFUCA",
       "aliados": [
         {
           "nome": "Weverton",
@@ -4721,8 +4805,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 165,
@@ -5074,7 +5166,7 @@
       "status": "verde",
       "percentual_alianca": 0,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E FUFUCA",
       "aliados": [
         {
           "nome": "Weverton",
@@ -5082,8 +5174,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 177,
@@ -5160,7 +5260,8 @@
           "cargo": "",
           "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 180,
@@ -5512,7 +5613,7 @@
       "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E FUFUCA",
       "aliados": [
         {
           "nome": "Weverton",
@@ -5520,8 +5621,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 192,
@@ -5574,7 +5683,7 @@
       "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E FUFUCA",
       "aliados": [
         {
           "nome": "Weverton",
@@ -5582,8 +5691,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Fufuca",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 195,
@@ -5802,7 +5919,7 @@
       "status": "verde",
       "percentual_alianca": 0,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E LAHESIO",
       "aliados": [
         {
           "nome": "Weverton",
@@ -5810,8 +5927,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Lahesio",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 203,
@@ -6064,7 +6189,7 @@
       "status": "verde",
       "percentual_alianca": 50,
       "coordenador": "",
-      "observacoes": "WEVERTON",
+      "observacoes": "WEVERTON E ROSEANA",
       "aliados": [
         {
           "nome": "Weverton",
@@ -6072,8 +6197,16 @@
           "contato": "",
           "cargo": "",
           "forca": "medio"
+        },
+        {
+          "nome": "Roseana",
+          "partido": "",
+          "contato": "",
+          "cargo": "",
+          "forca": "medio"
         }
-      ]
+      ],
+      "forcar_verde": true
     },
     {
       "id": 212,
