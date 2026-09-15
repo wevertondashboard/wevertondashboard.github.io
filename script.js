@@ -26,10 +26,22 @@ async function carregarDados() {
         dadosCompletos = await response.json();
         dadosCidades = dadosCompletos.cidades || [];
 
-        // ✅ USA O STATUS DO JSON — NÃO RECALCULA NADA
+        // ✅ USA O STATUS DO JSON E RECALCULA OS VOTOS TRANSFERIDOS
         dadosCidades.forEach(c => {
             if (!c.status) c.status = 'vermelho';
-            if (typeof c.votos_transferidos !== 'number') c.votos_transferidos = 0;
+
+            const pf = Number(c.votos_primeira_forca) || 0;
+            const sf = Number(c.votos_segunda_forca) || 0;
+
+            if (c.status === 'verde') {
+                c.votos_transferidos = Math.round(pf * 0.30);
+            } else if (c.status === 'amarelo') {
+                c.votos_transferidos = Math.round(pf * 0.30) + Math.round(sf * 0.20);
+            } else if (c.status === 'vermelho') {
+                c.votos_transferidos = Math.round(sf * 0.20);
+            } else {
+                c.votos_transferidos = 0;
+            }
         });
 
         calcularDiasRestantes();
@@ -64,7 +76,7 @@ function calcularDiasRestantes() {
 }
 
 // ============================================================
-// CALCULAR TOTAL DE VOTOS — SOMA DIRETA DO JSON
+// CALCULAR TOTAL DE VOTOS
 // ============================================================
 function calcularTotalVotos() {
     return dadosCidades.reduce((acc, c) => acc + (c.votos_transferidos || 0), 0);
@@ -238,7 +250,7 @@ function configurarBotaoCalor() {
 }
 
 // ============================================================
-// GERAR POPUP — USA OS DADOS DIRETOS DO JSON
+// GERAR POPUP
 // ============================================================
 function gerarPopupHTML(cidade) {
     const statusEmoji = getStatusEmoji(cidade.status);
