@@ -25,16 +25,11 @@ async function carregarDados() {
         const response = await fetch('dados-completos.json');
         dadosCompletos = await response.json();
         dadosCidades = dadosCompletos.cidades || [];
-        
+
         dadosCidades.forEach(c => {
-            if (!c.votos_transferidos && c.votos_prefeito) {
-                c.votos_transferidos = Math.round(c.votos_prefeito * (c.transferencia_esperada || 30) / 100);
-            }
-            // Status é sempre recalculado a partir de observações/aliados,
-            // pois o campo "status" do JSON pode estar desatualizado/errado.
             c.status = calcularStatusPorObservacao(c);
         });
-        
+
         calcularDiasRestantes();
         inicializarMapa();
         inicializarMiniMapas();
@@ -47,9 +42,9 @@ async function carregarDados() {
         configurarTogglePesquisas();
         configurarBotaoCalor();
         atualizarBadgesMiniMapas();
-        
+
         console.log(`✅ Carregados ${dadosCidades.length} municípios`);
-        console.log(`📊 Total: ${calcularTotalVotos().toLocaleString()} votos`);
+        console.log(`📊 Total transferido: ${calcularTotalVotos().toLocaleString()} votos`);
     } catch (error) {
         console.error('❌ Erro:', error);
         alert('Não foi possível carregar os dados.');
@@ -57,25 +52,20 @@ async function carregarDados() {
 }
 
 // ============================================================
-// CALCULAR STATUS (verde/amarelo/vermelho) A PARTIR DAS OBSERVAÇÕES
+// CALCULAR STATUS
 // ============================================================
 function calcularStatusPorObservacao(cidade) {
-    // Se a cidade estiver marcada manualmente como "forçar verde",
-    // ela é verde independente de quais nomes apareçam nas observações/aliados.
     if (cidade.forcar_verde === true) return 'verde';
 
     const obs = (cidade.observacoes || '').toUpperCase();
     const aliadosNomes = (cidade.aliados || []).map(a => (a.nome || '').toUpperCase());
 
-    // ODORICO conta como se fosse o próprio Weverton (mesmo "time")
     const temWeverton =
         obs.includes('WEVERTON') || obs.includes('ODORICO') ||
         aliadosNomes.includes('WEVERTON') || aliadosNomes.includes('ODORICO');
 
     if (!temWeverton) return 'vermelho';
 
-    // Tem Weverton/Odorico + algum outro nome/aliado além deles? -> amarelo
-    // Só Weverton e/ou Odorico (sozinhos) -> verde
     const outrosNomes = aliadosNomes.filter(n => n && n !== 'WEVERTON' && n !== 'ODORICO');
     const outroNoTexto = obs.replace(/WEVERTON/g, '').replace(/ODORICO/g, '').trim().length > 0;
 
@@ -100,7 +90,7 @@ function calcularTotalVotos() {
 }
 
 // ============================================================
-// INICIALIZAR MAPA - TELA CHEIA
+// INICIALIZAR MAPA
 // ============================================================
 function inicializarMapa() {
     mapa = L.map('mapaFull', {
@@ -117,14 +107,13 @@ function inicializarMapa() {
     }).addTo(mapa);
 
     L.control.scale({ position: 'bottomright' }).addTo(mapa);
-    
+
     adicionarMarcadores();
-    
     setTimeout(() => mapa.invalidateSize(), 100);
 }
 
 // ============================================================
-// FILTRAR CIDADES (usado tanto pelos pontos quanto pelo mapa de calor)
+// FILTRAR CIDADES
 // ============================================================
 function getCidadesFiltradas() {
     return dadosCidades.filter(cidade => {
@@ -139,7 +128,7 @@ function getCidadesFiltradas() {
 // ADICIONAR MARCADORES
 // ============================================================
 function adicionarMarcadores() {
-    if (modoCalor) return; // no modo calor, quem desenha é atualizarMapaCalor()
+    if (modoCalor) return;
 
     marcadores.forEach(m => mapa.removeLayer(m));
     marcadores = [];
@@ -149,8 +138,7 @@ function adicionarMarcadores() {
     cidadesFiltradas.forEach(cidade => {
         let cor = '#95a5a6';
         let status = 'neutro';
-        
-        // MAPEAMENTO CORRETO DOS STATUS
+
         if (cidade.status === 'verde') {
             cor = '#2ecc71';
             status = 'verde';
@@ -160,9 +148,6 @@ function adicionarMarcadores() {
         } else if (cidade.status === 'vermelho') {
             cor = '#e74c3c';
             status = 'vermelho';
-        } else {
-            cor = '#95a5a6';
-            status = 'neutro';
         }
 
         const tamanho = Math.max(8, Math.min(22, Math.sqrt((cidade.eleitores || 5000) / 4000)));
@@ -184,14 +169,13 @@ function adicionarMarcadores() {
                 🗳️ ${(cidade.votos_transferidos || 0).toLocaleString()} votos
             </div>
         `;
-        circulo.bindTooltip(tooltipContent, { 
-            permanent: false, 
+        circulo.bindTooltip(tooltipContent, {
+            permanent: false,
             direction: 'top',
             className: 'custom-tooltip'
         });
 
-        const popupContent = gerarPopupHTML(cidade);
-        circulo.bindPopup(popupContent);
+        circulo.bindPopup(gerarPopupHTML(cidade));
 
         circulo.on('click', function(e) {
             mapa.closePopup();
@@ -201,8 +185,6 @@ function adicionarMarcadores() {
         marcadores.push(circulo);
     });
 
-    // Quando há uma busca ativa, focar automaticamente no(s) resultado(s)
-    // Sem isso, o filtro "funciona" mas é imperceptível num mapa com 217 pontinhos.
     if (filtros.busca && filtros.busca.trim() !== '') {
         if (cidadesFiltradas.length === 1) {
             const c = cidadesFiltradas[0];
@@ -232,7 +214,6 @@ function atualizarMapaCalor() {
     const cidadesFiltradas = getCidadesFiltradas();
 
     const pontos = cidadesFiltradas.map(c => {
-        // intensidade baseada no nº de eleitores (colégio eleitoral maior = ponto mais quente)
         const intensidade = Math.min(1, (c.eleitores || 0) / 150000);
         return [c.lat, c.lng, Math.max(0.15, intensidade)];
     });
@@ -281,14 +262,82 @@ function configurarBotaoCalor() {
 function gerarPopupHTML(cidade) {
     const statusEmoji = getStatusEmoji(cidade.status);
     const statusLabel = getStatusLabel(cidade.status);
-    const votosTransferidos = cidade.votos_transferidos || Math.round((cidade.votos_prefeito || 0) * 0.3);
-    
-    // Definir cor do header baseada no status
+    const votosTransferidos = cidade.votos_transferidos || 0;
+
     let headerColor = '#95a5a6';
     if (cidade.status === 'verde') headerColor = '#2ecc71';
     else if (cidade.status === 'amarelo') headerColor = '#f1c40f';
     else if (cidade.status === 'vermelho') headerColor = '#e74c3c';
-    
+
+    const pf = cidade.votos_primeira_forca || 0;
+    const sf = cidade.votos_segunda_forca || 0;
+
+    let forcasHTML = `
+        <div style="background:rgba(255,255,255,0.05);border-radius:6px;padding:8px 10px;margin-top:6px;">
+            <div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.5px;color:rgba(255,255,255,0.4);margin-bottom:6px;">
+                📊 Forças Eleitorais
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.75rem;padding:3px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                <span style="color:rgba(255,255,255,0.6);">
+                    <strong style="color:#2ecc71;">1ª Força</strong> <span style="font-size:0.6rem;">(eleito)</span>
+                </span>
+                <span style="font-weight:700;color:#fff;">${pf.toLocaleString()} votos</span>
+            </div>
+    `;
+
+    if (sf > 0) {
+        forcasHTML += `
+            <div style="display:flex;justify-content:space-between;font-size:0.75rem;padding:3px 0;">
+                <span style="color:rgba(255,255,255,0.6);">
+                    <strong style="color:#e74c3c;">2ª Força</strong> <span style="font-size:0.6rem;">(não eleito)</span>
+                </span>
+                <span style="font-weight:700;color:#fff;">${sf.toLocaleString()} votos</span>
+            </div>
+        `;
+    }
+    forcasHTML += `</div>`;
+
+    let calculoHTML = `
+        <div class="transferencia-box" style="margin-top:6px;">
+            <div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.5px;color:rgba(255,255,255,0.5);margin-bottom:4px;">
+                🔄 Cálculo da Transferência
+            </div>
+    `;
+
+    if (cidade.status === 'verde') {
+        const calc30 = Math.round(pf * 0.30);
+        calculoHTML += `
+            <div style="font-size:0.7rem;color:rgba(255,255,255,0.6);">
+                30% da 1ª Força = <strong style="color:#2ecc71;">${calc30.toLocaleString()}</strong>
+            </div>
+        `;
+    } else if (cidade.status === 'amarelo') {
+        const calc30 = Math.round(pf * 0.30);
+        const calc20 = Math.round(sf * 0.20);
+        calculoHTML += `
+            <div style="font-size:0.7rem;color:rgba(255,255,255,0.6);">
+                30% da 1ª Força = <strong style="color:#2ecc71;">${calc30.toLocaleString()}</strong>
+            </div>
+            <div style="font-size:0.7rem;color:rgba(255,255,255,0.6);">
+                20% da 2ª Força = <strong style="color:#e74c3c;">${calc20.toLocaleString()}</strong>
+            </div>
+        `;
+    } else if (cidade.status === 'vermelho') {
+        const calc20 = Math.round(sf * 0.20);
+        calculoHTML += `
+            <div style="font-size:0.7rem;color:rgba(255,255,255,0.6);">
+                20% da 2ª Força = <strong style="color:#e74c3c;">${calc20.toLocaleString()}</strong>
+            </div>
+        `;
+    }
+
+    calculoHTML += `
+            <div style="border-top:1px solid rgba(255,255,255,0.1);margin-top:6px;padding-top:6px;font-size:0.85rem;font-weight:700;">
+                Total: <span class="valor" style="font-size:1.05rem;">${votosTransferidos.toLocaleString()} votos</span>
+            </div>
+        </div>
+    `;
+
     let aliadosHTML = '';
     if (cidade.aliados && cidade.aliados.length > 0) {
         const nomes = cidade.aliados.map(a => a.nome).join(', ');
@@ -321,10 +370,8 @@ function gerarPopupHTML(cidade) {
                     <span class="label">👥 Eleitores</span>
                     <span class="value">${cidade.eleitores ? cidade.eleitores.toLocaleString() : 'N/A'}</span>
                 </div>
-                <div class="transferencia-box">
-                    <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);">🔄 Transferência (${cidade.transferencia_esperada || 30}%)</div>
-                    <div class="valor">${votosTransferidos.toLocaleString()} votos</div>
-                </div>
+                ${forcasHTML}
+                ${calculoHTML}
                 <hr style="border-color:rgba(255,255,255,0.06);margin:8px 0;" />
                 <div style="font-weight:600;margin-bottom:4px;font-size:0.8rem;">🤝 Lideranças / Apoios</div>
                 ${aliadosHTML}
@@ -339,12 +386,7 @@ function gerarPopupHTML(cidade) {
 // FUNÇÕES AUXILIARES
 // ============================================================
 function getStatusEmoji(status) {
-    const map = {
-        'verde': '🟢',
-        'amarelo': '🟡',
-        'vermelho': '🔴',
-        'neutro': '⚪'
-    };
+    const map = { 'verde': '🟢', 'amarelo': '🟡', 'vermelho': '🔴', 'neutro': '⚪' };
     return map[status] || '⚪';
 }
 
@@ -364,14 +406,14 @@ function getStatusLabel(status) {
 function inicializarMiniMapas() {
     const regioes = ['GSL', 'Tocantina', 'Cocais', 'Delta', 'Mearim', 'Baixada', 'Sul'];
     const ids = ['miniMapGSL', 'miniMapTocantina', 'miniMapCocais', 'miniMapDelta', 'miniMapMearim', 'miniMapBaixada', 'miniMapSul'];
-    
+
     regioes.forEach((regiao, index) => {
         const containerId = ids[index];
         const container = document.getElementById(containerId);
         if (!container) return;
-        
+
         container.innerHTML = '';
-        
+
         const miniMap = L.map(containerId, {
             center: [-5.5, -45.5],
             zoom: 5,
@@ -383,21 +425,21 @@ function inicializarMiniMapas() {
             boxZoom: false,
             keyboard: false
         });
-        
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: ''
         }).addTo(miniMap);
-        
+
         const nomeRegiao = getNomeRegiao(regiao);
         const cidadesRegiao = dadosCidades.filter(c => c.regiao === nomeRegiao);
-        
+
         cidadesRegiao.forEach(cidade => {
             if (cidade.lat && cidade.lng) {
                 let cor = '#95a5a6';
                 if (cidade.status === 'verde') cor = '#2ecc71';
                 else if (cidade.status === 'amarelo') cor = '#f1c40f';
                 else if (cidade.status === 'vermelho') cor = '#e74c3c';
-                
+
                 L.circleMarker([cidade.lat, cidade.lng], {
                     radius: 3,
                     fillColor: cor,
@@ -408,16 +450,13 @@ function inicializarMiniMapas() {
                 }).addTo(miniMap);
             }
         });
-        
+
         if (cidadesRegiao.length > 0) {
             const bounds = L.latLngBounds(cidadesRegiao.filter(c => c.lat && c.lng).map(c => [c.lat, c.lng]));
-            if (bounds.isValid()) {
-                miniMap.fitBounds(bounds, { padding: [10, 10] });
-            }
+            if (bounds.isValid()) miniMap.fitBounds(bounds, { padding: [10, 10] });
         }
-        
+
         miniMapas[containerId] = miniMap;
-        
         setTimeout(() => miniMap.invalidateSize(), 300);
     });
 }
@@ -448,20 +487,19 @@ function atualizarBadgesMiniMapas() {
         'Baixada': 'badgeBaixada',
         'Sul do MA': 'badgeSul'
     };
-    
+
     for (const [regiao, badgeId] of Object.entries(mapeamento)) {
         const cidades = dadosCidades.filter(c => c.regiao === regiao);
         const badge = document.getElementById(badgeId);
         if (badge) {
             badge.textContent = cidades.length;
-            // Mudar cor baseada na maioria
             const verdes = cidades.filter(c => c.status === 'verde').length;
             const amarelos = cidades.filter(c => c.status === 'amarelo').length;
             const vermelhos = cidades.filter(c => c.status === 'vermelho').length;
-            
+
             badge.className = 'badge';
             if (verdes >= amarelos && verdes >= vermelhos && verdes > 0) {
-                // maioria verde
+                // verde
             } else if (amarelos >= verdes && amarelos >= vermelhos && amarelos > 0) {
                 badge.classList.add('amarelo');
             } else if (vermelhos > 0) {
@@ -480,27 +518,25 @@ function configurarMiniMapasClick() {
     document.querySelectorAll('.mini-map-item').forEach(item => {
         item.addEventListener('click', function() {
             const regiao = this.dataset.regiao;
-            if (regiao) {
-                ampliarMiniMapa(regiao);
-            }
+            if (regiao) ampliarMiniMapa(regiao);
         });
     });
 }
 
 function ampliarMiniMapa(regiao) {
     const cidadesRegiao = dadosCidades.filter(c => c.regiao === regiao);
-    
+
     if (cidadesRegiao.length === 0) {
         alert(`Nenhuma cidade encontrada para: ${regiao}`);
         return;
     }
-    
+
     const lats = cidadesRegiao.filter(c => c.lat).map(c => c.lat);
     const lngs = cidadesRegiao.filter(c => c.lng).map(c => c.lng);
-    
+
     const centerLat = lats.reduce((a, b) => a + b, 0) / lats.length;
     const centerLng = lngs.reduce((a, b) => a + b, 0) / lngs.length;
-    
+
     let conteudo = `
         <div style="min-width:300px;max-width:450px;background:#1a1a1a;border-radius:10px;border:1px solid rgba(255,255,255,0.08);">
             <div style="background:#e74c3c;color:white;padding:10px 14px;border-radius:10px 10px 0 0;font-weight:700;display:flex;justify-content:space-between;font-size:0.85rem;">
@@ -509,7 +545,7 @@ function ampliarMiniMapa(regiao) {
             </div>
             <div style="padding:10px 14px;max-height:300px;overflow-y:auto;">
     `;
-    
+
     cidadesRegiao.sort((a, b) => (b.eleitores || 0) - (a.eleitores || 0));
     cidadesRegiao.forEach(c => {
         const statusEmoji = getStatusEmoji(c.status);
@@ -522,7 +558,7 @@ function ampliarMiniMapa(regiao) {
             </div>
         `;
     });
-    
+
     conteudo += `
             </div>
             <div style="background:rgba(255,255,255,0.03);padding:4px 14px;border-radius:0 0 10px 10px;font-size:0.55rem;color:rgba(255,255,255,0.3);text-align:center;">
@@ -530,9 +566,9 @@ function ampliarMiniMapa(regiao) {
             </div>
         </div>
     `;
-    
+
     mapa.closePopup();
-    
+
     L.popup({
         className: 'popup-ampliado',
         maxWidth: 450,
@@ -541,18 +577,18 @@ function ampliarMiniMapa(regiao) {
     .setLatLng([centerLat, centerLng])
     .setContent(conteudo)
     .openOn(mapa);
-    
+
     mapa.setView([centerLat, centerLng], 8);
 }
 
 window.centralizarCidade = function(lat, lng, nome) {
     mapa.setView([lat, lng], 12);
     mapa.closePopup();
-    
+
     const cidade = dadosCidades.find(c => c.lat === lat && c.lng === lng);
     if (cidade) {
         setTimeout(() => {
-            const popup = L.popup()
+            L.popup()
                 .setLatLng([lat, lng])
                 .setContent(gerarPopupHTML(cidade))
                 .openOn(mapa);
@@ -567,25 +603,25 @@ function atualizarDashboard() {
     const totalVotos = calcularTotalVotos();
     const metaGeral = 1200000;
     const totalEleitores = 5186562;
-    
+
     const verdes = dadosCidades.filter(c => c.status === 'verde').length;
     const amarelos = dadosCidades.filter(c => c.status === 'amarelo').length;
     const vermelhos = dadosCidades.filter(c => c.status === 'vermelho').length;
-    
+
     document.getElementById('totalEleitores').textContent = totalEleitores.toLocaleString();
     document.getElementById('metaGeral').textContent = metaGeral.toLocaleString();
     document.getElementById('votosProjetados').textContent = totalVotos.toLocaleString();
-    
+
     const diferenca = totalVotos - metaGeral;
     const diffEl = document.getElementById('diferencaMeta');
     diffEl.textContent = (diferenca >= 0 ? '+' : '') + diferenca.toLocaleString();
     diffEl.style.color = diferenca >= 0 ? '#2ecc71' : '#e74c3c';
-    
+
     const porcentagem = Math.min((totalVotos / metaGeral) * 100, 100);
     document.getElementById('termometroFill').style.width = porcentagem + '%';
     document.getElementById('termometroVotos').textContent = totalVotos.toLocaleString();
     document.getElementById('termometroPorcentagem').textContent = Math.round(porcentagem) + '%';
-    
+
     document.getElementById('totalCidadesFooter').textContent = dadosCidades.length;
     document.getElementById('footerConsolidados').textContent = verdes;
     document.getElementById('footerDisputados').textContent = amarelos;
@@ -598,10 +634,10 @@ function atualizarDashboard() {
 function preencherRankingMini() {
     const container = document.getElementById('listaRankingMini');
     container.innerHTML = '';
-    
+
     const sorted = [...dadosCidades].sort((a, b) => (b.eleitores || 0) - (a.eleitores || 0));
     const top10 = sorted.slice(0, 10);
-    
+
     top10.forEach((cidade, index) => {
         const div = document.createElement('div');
         div.className = 'ranking-item';
@@ -614,7 +650,7 @@ function preencherRankingMini() {
             if (cidade.lat && cidade.lng) {
                 mapa.setView([cidade.lat, cidade.lng], 12);
                 setTimeout(() => {
-                    const popup = L.popup()
+                    L.popup()
                         .setLatLng([cidade.lat, cidade.lng])
                         .setContent(gerarPopupHTML(cidade))
                         .openOn(mapa);
@@ -630,7 +666,7 @@ function preencherRankingMini() {
 // ============================================================
 function criarGraficoMiniPesquisas() {
     const ctx = document.getElementById('graficoMiniPesquisas').getContext('2d');
-    
+
     new Chart(ctx, {
         type: 'line',
         data: {
@@ -651,9 +687,7 @@ function criarGraficoMiniPesquisas() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            plugins: {
-                legend: { display: false }
-            },
+            plugins: { legend: { display: false } },
             scales: {
                 y: {
                     beginAtZero: true,
@@ -666,10 +700,7 @@ function criarGraficoMiniPesquisas() {
                     grid: { color: 'rgba(255,255,255,0.05)' }
                 },
                 x: {
-                    ticks: {
-                        color: 'rgba(255,255,255,0.2)',
-                        font: { size: 7 }
-                    },
+                    ticks: { color: 'rgba(255,255,255,0.2)', font: { size: 7 } },
                     grid: { color: 'rgba(255,255,255,0.05)' }
                 }
             }
@@ -678,29 +709,25 @@ function criarGraficoMiniPesquisas() {
 }
 
 // ============================================================
-// CONFIGURAR TOGGLE PAINEL ESQUERDA
+// TOGGLES
 // ============================================================
 function configurarTogglePanel() {
     document.getElementById('btnTogglePanel').addEventListener('click', () => {
         const panel = document.getElementById('floatingPanel');
         panel.classList.toggle('hidden');
         panelVisible = !panelVisible;
-        
         const btn = document.getElementById('btnTogglePanel');
         btn.innerHTML = panelVisible ? '<i class="fas fa-chart-bar"></i>' : '<i class="fas fa-times"></i>';
     });
 }
 
-// ============================================================
-// CONFIGURAR TOGGLE PAINEL PESQUISAS
-// ============================================================
 function configurarTogglePesquisas() {
     document.getElementById('btnTogglePesquisas').addEventListener('click', () => {
         const panel = document.getElementById('pesquisasPanel');
         panel.classList.toggle('minimizado');
         pesquisasVisible = !pesquisasVisible;
     });
-    
+
     document.querySelector('.pesquisas-panel-header').addEventListener('click', (e) => {
         if (e.target.closest('.btn-toggle-pesquisas')) return;
         const panel = document.getElementById('pesquisasPanel');
@@ -710,19 +737,19 @@ function configurarTogglePesquisas() {
 }
 
 // ============================================================
-// CONFIGURAR EVENTOS
+// EVENTOS
 // ============================================================
 function configurarEventos() {
     document.getElementById('filtroRegiao').addEventListener('change', (e) => {
         filtros.regiao = e.target.value;
         if (modoCalor) atualizarMapaCalor(); else adicionarMarcadores();
     });
-    
+
     document.getElementById('filtroStatus').addEventListener('change', (e) => {
         filtros.status = e.target.value;
         if (modoCalor) atualizarMapaCalor(); else adicionarMarcadores();
     });
-    
+
     let buscaTimeout;
     document.getElementById('buscaCidade').addEventListener('input', (e) => {
         clearTimeout(buscaTimeout);
