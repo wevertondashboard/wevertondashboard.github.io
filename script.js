@@ -26,8 +26,10 @@ async function carregarDados() {
         dadosCompletos = await response.json();
         dadosCidades = dadosCompletos.cidades || [];
 
+        // ✅ USA O STATUS DO JSON — NÃO RECALCULA NADA
         dadosCidades.forEach(c => {
-            c.status = calcularStatusPorObservacao(c);
+            if (!c.status) c.status = 'vermelho';
+            if (typeof c.votos_transferidos !== 'number') c.votos_transferidos = 0;
         });
 
         calcularDiasRestantes();
@@ -52,27 +54,6 @@ async function carregarDados() {
 }
 
 // ============================================================
-// CALCULAR STATUS
-// ============================================================
-function calcularStatusPorObservacao(cidade) {
-    if (cidade.forcar_verde === true) return 'verde';
-
-    const obs = (cidade.observacoes || '').toUpperCase();
-    const aliadosNomes = (cidade.aliados || []).map(a => (a.nome || '').toUpperCase());
-
-    const temWeverton =
-        obs.includes('WEVERTON') || obs.includes('ODORICO') ||
-        aliadosNomes.includes('WEVERTON') || aliadosNomes.includes('ODORICO');
-
-    if (!temWeverton) return 'vermelho';
-
-    const outrosNomes = aliadosNomes.filter(n => n && n !== 'WEVERTON' && n !== 'ODORICO');
-    const outroNoTexto = obs.replace(/WEVERTON/g, '').replace(/ODORICO/g, '').trim().length > 0;
-
-    return (outrosNomes.length > 0 || outroNoTexto) ? 'amarelo' : 'verde';
-}
-
-// ============================================================
 // CALCULAR DIAS
 // ============================================================
 function calcularDiasRestantes() {
@@ -83,7 +64,7 @@ function calcularDiasRestantes() {
 }
 
 // ============================================================
-// CALCULAR TOTAL DE VOTOS
+// CALCULAR TOTAL DE VOTOS — SOMA DIRETA DO JSON
 // ============================================================
 function calcularTotalVotos() {
     return dadosCidades.reduce((acc, c) => acc + (c.votos_transferidos || 0), 0);
@@ -257,7 +238,7 @@ function configurarBotaoCalor() {
 }
 
 // ============================================================
-// GERAR POPUP
+// GERAR POPUP — USA OS DADOS DIRETOS DO JSON
 // ============================================================
 function gerarPopupHTML(cidade) {
     const statusEmoji = getStatusEmoji(cidade.status);
